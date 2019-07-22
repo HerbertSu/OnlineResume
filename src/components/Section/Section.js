@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './styles.css';
 
 import Bullets from '../Bullets/Bullets';
+import Logo from '../Logo/Logo';
 
 class Section extends Component{
     /**
@@ -17,17 +18,23 @@ class Section extends Component{
                 </li>
             );
         });
-        console.log(bullets)
         return bullets;
     };
 
     render(){
         return(
-            <div style={{backgroundColor: this.props.backgroundColor}} className="section">
-                {this.props.title}
-                <ul>
-                    <Bullets bullets={this.bulletDescriptions("Hi my name is Herbert Su".split(" "))}/>
-                </ul>
+            <div style={{backgroundColor: this.props.backgroundColor}} className="container">
+                <div id="title">
+                    {this.props.title}
+                </div>
+                <div id="logo">
+                    <Logo/>
+                </div>
+                <div>
+                    <ul>
+                        <Bullets bullets={this.bulletDescriptions("Hi my name is Herbert Su".split(" "))}/>
+                    </ul>
+                </div>
                 <a className="button" onClick={()=>this.props.goToTop()}>Back To Top </a>
             </div>
         )
