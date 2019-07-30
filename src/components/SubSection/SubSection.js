@@ -21,6 +21,8 @@ class SubSection extends Component{
         return bullets;
     };
 
+
+
     render(){
         return(
             <div style={{backgroundColor: this.props.backgroundColor}} className="container">

@@ -8,6 +8,10 @@ import './App.css';
 import AboutMe from './components/AboutMe/AboutMe';
 import SubSection from './components/SubSection/SubSection';
 
+import {connect} from 'react-redux';
+
+import {changeAge, changeName} from './redux/actions/userActions';
+
 /**
  * TODO:
  *    -Add picture to top left
@@ -17,6 +21,19 @@ import SubSection from './components/SubSection/SubSection';
  *    -Remove react-scrollable-anchor; replace with react-fullpage
  *    
  */
+
+const mapStateToProps = (store) => {
+  return {
+    user : store.user.user,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    changeAge : (age) => dispatch(changeAge(age)),
+    changeName : (name) => dispatch(changeName(name)),
+  };
+};
 
 class App extends Component {
 
@@ -68,4 +85,4 @@ class App extends Component {
   };
 };
 
-export default App;
+export default connect(mapStateToProps, mapDispatchToProps)(App);
