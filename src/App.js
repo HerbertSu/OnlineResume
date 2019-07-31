@@ -37,8 +37,7 @@ const mapDispatchToProps = (dispatch) => {
 
 class App extends Component {
 
-  render()
-  {
+  render(){
     return (
       <div className="App">
         <div id='header'>
