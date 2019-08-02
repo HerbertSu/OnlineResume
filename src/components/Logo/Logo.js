@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import * as url from '../../images/IMG_2314.jpg';
+import * as url2 from '../../images/wallpaper1.jpg'
 import './styles.css';
 
 class Logo extends Component{

@@ -1,36 +1,21 @@
 .App {
   text-align: center;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: [first] 1fr [second] 1fr [third] 1fr [fourth] 1fr [fifth];
+  font-size : 1.5vw;
 }
 
 .App-header {
   background-color: #282c34;
   min-height: 50vh;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-#header{
-  grid-area: 1 / 1 / 2 / 2;
-}
-
-#experience1{
-  grid-area: 2 / 1 / 3 / 2;
-}
-
-#volunteer1{
-  grid-area: 3 / 1 / 4 / 2;
-}
-
-#project1{
-  grid-area: 4 / 1 / 5 / 2;
-}
 
 .floatingMenu{
   position: fixed;

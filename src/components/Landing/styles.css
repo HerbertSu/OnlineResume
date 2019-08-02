@@ -1,0 +1,24 @@
+#landing{
+    display: grid;
+    grid-template-columns: [c-photo-start c-left-pad-start] 5% [c-left-pad-end] 32% [c-photo-end c-buffer-start] 10% [c-buffer-end c-contact-start] 48% [c-contact-end c-right-pad-start] 5% [c-right-pad-end];
+    grid-template-rows: [r-first-half-start] 50% [r-first-half-end r-top-buffer-start] 5% [r-top-buffer-end r-second-half-start] 40% [r-second-half-end bottom-buffer-start];
+}
+
+#photo{
+    grid-column-start: c-photo-start;
+    grid-column-end: c-photo-end;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+
+#title{
+    grid-column-start: c-contact-start;
+    grid-column-end: c-contact-end;
+    grid-row-start: r-first-half-start;
+    grid-row-end:
+}

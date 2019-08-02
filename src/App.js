@@ -5,7 +5,7 @@ import {SectionsContainer, Section} from 'react-fullpage';
 import logo from './logo.svg';
 import './App.css';
 
-import AboutMe from './components/AboutMe/AboutMe';
+import Landing from './components/Landing/Landing';
 import SubSection from './components/SubSection/SubSection';
 
 /**
@@ -38,8 +38,7 @@ class App extends Component {
   {
     return (
       <div className="App">
-        
-        
+             
         <div className="floatingMenu">
           <ul style={{listStyle : 'none'}}>
             <li>
@@ -53,14 +52,10 @@ class App extends Component {
             </li>
           </ul>
         </div>
+
         <SectionsContainer {...options}>
           <Section>
-          <div id='header'>
-            <header className="App-header">
-              Welcome to Herbert Su's resume.
-            </header>
-              <AboutMe/>
-            </div>
+            <Landing/>
           </Section>
           <Section>
             <SubSection title={'Work Experience'} goToTop={goToTop}/>

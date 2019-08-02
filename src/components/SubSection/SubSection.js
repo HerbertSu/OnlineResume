@@ -35,7 +35,9 @@ class SubSection extends Component{
                         <Bullets bullets={this.bulletDescriptions("Hi my name is Herbert Su".split(" "))}/>
                     </ul>
                 </div>
-                <a className="button" onClick={()=>this.props.goToTop()}>Back To Top </a>
+                <div id="linkToCompany">
+                    <a className="button" onClick={()=>this.props.goToTop()}> Visit </a>
+                </div>
             </div>
         )
     };
