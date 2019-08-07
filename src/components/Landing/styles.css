@@ -1,24 +1,79 @@
 #landing{
     display: grid;
-    grid-template-columns: [c-photo-start c-left-pad-start] 5% [c-left-pad-end] 32% [c-photo-end c-buffer-start] 10% [c-buffer-end c-contact-start] 48% [c-contact-end c-right-pad-start] 5% [c-right-pad-end];
-    grid-template-rows: [r-first-half-start] 50% [r-first-half-end r-top-buffer-start] 5% [r-top-buffer-end r-second-half-start] 40% [r-second-half-end bottom-buffer-start];
+    grid-template-columns: [c-photo-start c-left-pad-start] 5vw [c-left-pad-end] 25vw [c-photo-end c-buffer-start] 5vw [c-buffer-end c-contact-start] 60vw [c-contact-end c-right-pad-start] 5vw [c-right-pad-end];
+    grid-template-rows: [r-first-half-start r-name-start] 25vh [r-name-end r-email-start] 12.5vh [r-email-end r-cell-start] 12.5vh [r-cell-end r-first-half-end r-top-buffer-start] 5vh [r-top-buffer-end r-second-half-start] 40vh [r-second-half-end bottom-buffer-start] 5vh [bottom-buffer-end];
+    position: relative;
+    background-color: rgb(2, 3, 35);
+    background: linear-gradient(180deg, rgb(2, 3, 35) 50%, white 50%);
 }
 
-#photo{
+#portrait{
     grid-column-start: c-photo-start;
     grid-column-end: c-photo-end;
+    grid-row-start: r-first-half-start;
+    grid-row-end: r-first-half-end;
     display: flex;
     flex: 1;
     justify-content: center;
     align-items: center;
     object-fit: cover;
-    width: 100%;
-    max-height: 100%;
+    height: 100%;
+    width: auto;
+    /* width: 67.5%;
+    max-height: 100%; */
 }
 
-#title{
+#headline{
     grid-column-start: c-contact-start;
     grid-column-end: c-contact-end;
-    grid-row-start: r-first-half-start;
-    grid-row-end:
+    grid-row-start: r-name-start;
+    grid-row-end: r-name-end;
+    position: absolute;
+    text-align: left;
+    left: 20vh;
+    font-size: 4em;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+#headline div{
+    font-size: 0.5em;
+}
+
+#email{
+    grid-column-start: c-contact-start;
+    grid-column-end: c-contact-end;
+    grid-row-start: r-email-start;
+    grid-row-end: r-email-end;
+    position: absolute;
+    bottom: 0;
+    left: 20vh;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+#cellPhone{
+    grid-column-start: c-contact-start;
+    grid-column-end: c-contact-end;
+    grid-row-start: r-cell-start;
+    grid-row-end: r-cell-end;
+    text-align: left;
+    position: absolute;
+    left: 20vh;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+#aboutMe{
+    grid-column-start: c-left-pad-end;
+    grid-column-end: c-right-pad-start;
+    grid-row-start: r-second-half-start;
+    grid-row-end: r-second-half-end;
+    text-align: start;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+}
+
+#aboutMe div{
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.5em;
 }
