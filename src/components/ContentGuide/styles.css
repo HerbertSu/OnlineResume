@@ -1,0 +1,40 @@
+#contentGuideContainer{
+    display: grid;
+    grid-template-columns: [c-left-buffer-start] 5vw [c-left-buffer-end c-first-quart-start] 1fr [c-first-quart-end c-second-quart-start] 1fr [c-second-quart-end c-third-quart-start] 1fr [c-third-quart-end c-fourth-quart-start] 1fr [c-fourth-quart-end c-right-buffer-start] 5vw [c-right-buffer-end];
+    grid-template-rows: [r-title-start] 15vh [r-title-end r-section-names-start] 15vh [r-section-names-end r-section-start] 70vh [r-section-end];
+}
+
+#contentGuideTitle{
+    grid-column-start: c-left-buffer-end;
+    grid-column-end: c-second-quart-end;
+    grid-row-start: r-title-start;
+    grid-row-end: r-title-end;
+}
+
+#aboutMeSectionName{
+    grid-column-start: c-first-quart-start;
+    grid-column-end: c-first-quart-end;
+    grid-row-start: r-section-names-start;
+    grid-row-end: r-section-names-end;
+}
+
+#expSectionName{
+    grid-column-start: c-second-quart-start;
+    grid-column-end: c-second-quart-end;
+    grid-row-start: r-section-names-start;
+    grid-row-end: r-section-names-end;
+}
+
+#projectsSectionName{
+    grid-column-start: c-third-quart-start;
+    grid-column-end: c-third-quart-end;
+    grid-row-start: r-section-names-start;
+    grid-row-end: r-section-names-end;
+}
+
+#volunteerSectionName{
+    grid-column-start: c-fourth-quart-start;
+    grid-column-end: c-fourth-quart-end;
+    grid-row-start: r-section-names-start;
+    grid-row-end: r-section-names-end;
+}

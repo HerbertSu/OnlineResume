@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import ScrollableAnchor, {goToAnchor, goToTop} from 'react-scrollable-anchor';
 import {SectionsContainer, Section} from 'react-fullpage';
 
 import logo from './logo.svg';
@@ -7,6 +6,7 @@ import './App.css';
 
 import Landing from './components/Landing/Landing';
 import SubSection from './components/SubSection/SubSection';
+import ContentGuide from './components/ContentGuide/ContentGuide';
 
 /**
  * TODO:
@@ -16,14 +16,17 @@ import SubSection from './components/SubSection/SubSection';
  *    -Add parallax
  *  x  -Remove react-scrollable-anchor; replace with react-fullpage
  *    -Add a "Table of Contents" section after landing telling the color scheme of backgrounds
+ *    -Color Scheme possibilities: 
+ *        -Turquoise, coral, ivory
+ *        -#A299CA (lavendar), #7CCAAE (green), #ECEC84 (lemon)
  */
 
 let options = {
   activeClass:          'active', // the class that is appended to the sections links
-  anchors:              ["header","section1", "section2", "section3"], // the anchors for each sections
+  anchors:              ["landing","tableOfContents","section1", "section2", "section3"], // the anchors for each sections
   arrowNavigation:      true, // use arrow keys
   className:            'SectionContainer', // the class name for the section container
-  delay:                750, // the scroll animation speed
+  delay:                1000, // the scroll animation speed
   navigation:           true, // use dots navigatio
   scrollBar:            false, // use the browser default scrollbar
   sectionClassName:     'Section', // the section class name
@@ -58,13 +61,16 @@ class App extends Component {
             <Landing/>
           </Section>
           <Section>
-            <SubSection title={'Work Experience'} goToTop={goToTop}/>
+            <ContentGuide/>
           </Section>
           <Section>
-            <SubSection title={'Volunteer Experience'} backgroundColor={"#000010"} goToTop={goToTop} style={{display:'grid'}}/>
+            <SubSection title={'Work Experience'}/>
           </Section>
           <Section>
-            <SubSection title={'Projects'} goToTop={goToTop}/>
+            <SubSection title={'Volunteer Experience'} backgroundColor={"#000010"} style={{display:'grid'}}/>
+          </Section>
+          <Section>
+            <SubSection title={'Projects'} />
           </Section>
         </SectionsContainer>
       </div>
