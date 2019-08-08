@@ -4,7 +4,7 @@ import './styles.css';
 import Bullets from '../Bullets/Bullets';
 import Logo from '../Logo/Logo';
 
-class Section extends Component{
+class SubSection extends Component{
     /**
      * 
      * @param {array} content Array of statements to describe the job/extracurricular in this section. 
@@ -30,15 +30,17 @@ class Section extends Component{
                 <div id="logo">
                     <Logo/>
                 </div>
-                <div>
+                <div id="content">
                     <ul>
                         <Bullets bullets={this.bulletDescriptions("Hi my name is Herbert Su".split(" "))}/>
                     </ul>
                 </div>
-                <a className="button" onClick={()=>this.props.goToTop()}>Back To Top </a>
+                <div id="linkToCompany">
+                    <a className="button" onClick={()=>this.props.goToTop()}> Visit </a>
+                </div>
             </div>
         )
     };
 };
 
-export default Section;
+export default SubSection;

@@ -1,52 +1,72 @@
 import React, {Component} from 'react';
 import ScrollableAnchor, {goToAnchor, goToTop} from 'react-scrollable-anchor';
+import {SectionsContainer, Section} from 'react-fullpage';
 
 import logo from './logo.svg';
 import './App.css';
 
-import Section from './components/Section/Section';
+import Landing from './components/Landing/Landing';
+import SubSection from './components/SubSection/SubSection';
 
 /**
  * TODO:
- *    -Add picture to top left
+ *  x  -Add picture to top left
  *    -Add side menu
  *    -Add button to link to other websites.
  *    -Add parallax
+ *  x  -Remove react-scrollable-anchor; replace with react-fullpage
+ *    -Add a "Table of Contents" section after landing telling the color scheme of backgrounds
  */
+
+let options = {
+  activeClass:          'active', // the class that is appended to the sections links
+  anchors:              ["header","section1", "section2", "section3"], // the anchors for each sections
+  arrowNavigation:      true, // use arrow keys
+  className:            'SectionContainer', // the class name for the section container
+  delay:                750, // the scroll animation speed
+  navigation:           true, // use dots navigatio
+  scrollBar:            false, // use the browser default scrollbar
+  sectionClassName:     'Section', // the section class name
+  sectionPaddingTop:    '0', // the section top padding
+  sectionPaddingBottom: '0', // the section bottom padding
+  verticalAlign:        false // align the content of each section vertical
+};
 
 class App extends Component {
 
   render()
   {
-    return (
+    return ( 
       <div className="App">
-        <div id='header'>
-          <header className="App-header">
-            Welcome to Herbert Su's resume.
-          </header>
-          <a href='#section1'>Section 1</a>
-          <a href='#section2'>Section 2</a>
-          <a href='#section3'>Section 3</a>
+             
+        <div className="floatingMenu">
+          <ul style={{listStyle : 'none'}}>
+            <li>
+              <a href='#section1'>Section 1</a>
+            </li>
+            <li>
+              <a href='#section2'>Section 2</a>
+            </li>
+            <li>
+              <a href='#section3'>Section 3</a>
+            </li>
+          </ul>
         </div>
-        
-        <div className='screen' id='experience1'>
-          <ScrollableAnchor id={'section1'} onScrollDown={()=>{goToAnchor('section2')}}>
-            <Section title={'Work Experience'} goToTop={goToTop}/>
-          </ScrollableAnchor>
-        </div>
-        
-        <div className='screen' id='volunteer1'>
-          <ScrollableAnchor id={'section2'}>
-            <Section title={'Volunteer Experience'} backgroundColor={"#000010"} goToTop={goToTop}/>
-          </ScrollableAnchor>
-        </div>
-        
-        <div className='screen' id='project1'>
-          <ScrollableAnchor id={'section3'}>
-            <Section title={'Projects'} goToTop={goToTop}/>
-          </ScrollableAnchor>
-        </div>
-        
+
+        <SectionsContainer {...options}>
+          <Section>
+            <Landing/>
+          </Section>
+          <Section>
+            <SubSection title={'Work Experience'} goToTop={goToTop}/>
+          </Section>
+          <Section>
+            <SubSection title={'Volunteer Experience'} backgroundColor={"#000010"} goToTop={goToTop} style={{display:'grid'}}/>
+          </Section>
+          <Section>
+            <SubSection title={'Projects'} goToTop={goToTop}/>
+          </Section>
+        </SectionsContainer>
       </div>
     );
   };
