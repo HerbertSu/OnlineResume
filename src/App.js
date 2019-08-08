@@ -10,12 +10,12 @@ import SubSection from './components/SubSection/SubSection';
 
 /**
  * TODO:
- *    -Add picture to top left
+ *  x  -Add picture to top left
  *    -Add side menu
  *    -Add button to link to other websites.
  *    -Add parallax
- *    -Remove react-scrollable-anchor; replace with react-fullpage
- *    
+ *  x  -Remove react-scrollable-anchor; replace with react-fullpage
+ *    -Add a "Table of Contents" section after landing telling the color scheme of backgrounds
  */
 
 let options = {

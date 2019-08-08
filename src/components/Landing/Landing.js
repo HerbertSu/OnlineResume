@@ -25,7 +25,12 @@ export default class Landing extends Component{
                 <div id="aboutMe">
                     About Me:
                     <div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit lectus elementum varius dapibus. Vivamus vitae feugiat massa. Donec nulla ante, porta nec erat vitae, pulvinar maximus magna. Proin vulputate diam sed ligula bibendum varius. Ut feugiat lacus non lectus tempor, vitae laoreet felis vestibulum. Nullam ac elit id lectus pretium fringilla at eget nisl. Integer a mi semper, ultricies tortor eget, fermentum est. Ut bibendum justo in imperdiet pretium. Nulla facilisi. Duis fermentum augue augue. Nunc et ex quis magna aliquam blandit. Nulla at rutrum risus, nec gravida augue. Suspendisse in libero lacus. Praesent aliquet, augue vel commodo ultricies, nibh lectus lobortis nisl, et aliquet massa sapien a urna. Maecenas venenatis, eros quis dapibus tincidunt, diam lorem tempus est, et molestie odio magna vel risus.
+                        <p>
+                            Hi there! My name is Herbert and welcome to my website. 
+                        </p>
+                        <p>
+                            I am an ambitious individual looking to further my skills as a software/full-stack developer. Each piece of code I write, whether it be a small function or a library of modules, brings me joy because it is something I know I created. What I look for most in a position is its capacity for me to learn, to think differently, to see things I have never seen before, and above all, to create.    
+                        </p>
                     </div>
                 </div>
             </div>
