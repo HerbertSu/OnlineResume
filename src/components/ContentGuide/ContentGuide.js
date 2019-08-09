@@ -8,19 +8,20 @@ export default class ContentGuide extends Component{
                 <div id="contentGuideTitle">
                     Content Guide
                 </div>
-                <div id="aboutMeSectionName">
+                <div id="aboutMeSectionName" className="contentSectionNames">
                     AboutMe
                 </div>
-                <div id="expSectionName">
+                <div id="expSectionName" className="contentSectionNames exp">
                     Programming Experience
                 </div>
-                <div id="projectsSectionName">
+                <div id="projectsSectionName" className="contentSectionNames project">
                     Projects
                 </div>
-                <div id="volunteerSectionName">
+                <div id="volunteerSectionName" className="contentSectionNames volunteer"> 
                     Volunteer
                 </div>
-                <div id="expSection">
+                <div className="contentDivider"></div>
+                <div id="expSection" className="contentSection">
                     <ul>
                         <li>Infosys</li>
                         <li>ELFIN</li>
@@ -28,15 +29,14 @@ export default class ContentGuide extends Component{
                         <li>Camp Counselor</li>
                     </ul>
                 </div>
+                <div id="projectsSection" className="contentSection">
                     <ul>
                         <li>Poligo</li>
                         <li>Meet Your Coworkers</li>
                         <li>Herbert.su.io</li>
                     </ul>
-                <div id="projectsSection">
-
                 </div>
-                <div id="volunteerSection">
+                <div id="volunteerSection" className="contentSection">
                     <ul>
                         <li>Bruin Partners</li>
                         <li>Undergraduate TA</li>

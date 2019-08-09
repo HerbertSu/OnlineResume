@@ -1,14 +1,61 @@
+/* 
+Color Schemes
+    #40e0d0 (Turquoise), #f88379 (coral), #fffff0 (ivory)
+    #A299CA (lavendar), #7CCAAE (green), #ECEC84 (lemon)
+*/
+
 #contentGuideContainer{
     display: grid;
-    grid-template-columns: [c-left-buffer-start] 5vw [c-left-buffer-end c-first-quart-start] 1fr [c-first-quart-end c-second-quart-start] 1fr [c-second-quart-end c-third-quart-start] 1fr [c-third-quart-end c-fourth-quart-start] 1fr [c-fourth-quart-end c-right-buffer-start] 5vw [c-right-buffer-end];
-    grid-template-rows: [r-title-start] 15vh [r-title-end r-section-names-start] 15vh [r-section-names-end r-section-start] 70vh [r-section-end];
+    grid-template-columns: [c-left-buffer-start] 5vw [c-left-buffer-end c-first-divider-start] 0.5vw [c-first-divider-end c-first-quart-start] 1fr [c-first-quart-end c-second-divider-start] 0.5vw [c-second-divider-end c-second-quart-start] 1fr [c-second-quart-end c-third-divider-start] 0.5vw [c-third-divider-end c-third-quart-start] 1fr [c-third-quart-end c-fourth-divider-start] 0.5vw [c-fourth-divider-end c-fourth-quart-start] 1fr [c-fourth-quart-end c-fifth-divider-start] 0.5vw [c-fifth-divider-end c-right-buffer-start] 5vw [c-right-buffer-end];
+    grid-template-rows: [r-title-start] 20vh [r-title-end r-section-names-start] 20vh [r-section-names-end r-section-start] 50vh [r-section-end r-bottom-buffer-start] 5vh [r-bottom-buffer-end];
+    position: relative;
+    background-color: rgb(2, 3, 35);
+    background: linear-gradient(180deg, rgb(2, 3, 35) 20%, white 0%);
 }
 
 #contentGuideTitle{
+    text-align: left;
     grid-column-start: c-left-buffer-end;
     grid-column-end: c-second-quart-end;
     grid-row-start: r-title-start;
     grid-row-end: r-title-end;
+    font-size: 4em;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+
+ul{
+    color: white;
+}
+
+.contentSectionNames{
+    padding-top: 1vh;
+    text-align: left;
+    bottom: 0;
+    font-size: 2em;
+    font-family: 'Oswald', sans-serif;
+}
+
+.contentSection{
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+}
+
+.contentSection ul li{
+    padding-top: 1em;
+}
+
+.exp{
+    color: #40e0d0;
+}
+
+.project{
+    color: #f88379;
+
+}
+
+.volunteer{
+    color: #ecdb84;
 }
 
 #aboutMeSectionName{
@@ -19,6 +66,7 @@
 }
 
 #expSectionName{
+    border-bottom: 1vh solid;
     grid-column-start: c-second-quart-start;
     grid-column-end: c-second-quart-end;
     grid-row-start: r-section-names-start;
@@ -26,6 +74,7 @@
 }
 
 #projectsSectionName{
+    border-bottom: 1vh solid;
     grid-column-start: c-third-quart-start;
     grid-column-end: c-third-quart-end;
     grid-row-start: r-section-names-start;
@@ -33,8 +82,27 @@
 }
 
 #volunteerSectionName{
+    border-bottom: 1vh solid;
     grid-column-start: c-fourth-quart-start;
     grid-column-end: c-fourth-quart-end;
     grid-row-start: r-section-names-start;
     grid-row-end: r-section-names-end;
+}
+
+#expSection{
+    grid-column: c-second-quart-start / c-second-quart-end;
+    grid-row: r-section-start / r-section-end;
+    background-color: #40e0d0;
+}
+
+#projectsSection{
+    grid-column: c-third-quart-start / c-third-quart-end;
+    grid-row: r-section-start / r-section-end;
+    background-color: #f88379;
+}
+
+#volunteerSection{
+    grid-column: c-fourth-quart-start / c-fourth-quart-end;
+    grid-row: r-section-start / r-section-end;
+    background-color: #ecdb84;
 }
