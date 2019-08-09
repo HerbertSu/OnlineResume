@@ -9,7 +9,6 @@ export default class Landing extends Component{
                 <img src={portrait} id="portrait"/>
                 <div id="headline">
                     Herbert Su's 
-
                     <div> 
                         online resume
                     </div>
