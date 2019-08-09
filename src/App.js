@@ -15,7 +15,9 @@ import ContentGuide from './components/ContentGuide/ContentGuide';
  *    -Add button to link to other websites.
  *    -Add parallax
  *  x  -Remove react-scrollable-anchor; replace with react-fullpage
- *    -Add a "Table of Contents" section after landing telling the color scheme of backgrounds
+ *  x  -Add a "Table of Contents" section after landing telling the color scheme of backgrounds
+ *    -Collect pictures of my companies'/experiences' logos
+ *    -Add content to each experience section
  *    -Color Scheme possibilities: 
  *        -Turquoise, coral, ivory
  *        -#A299CA (lavendar), #7CCAAE (green), #ECEC84 (lemon)
