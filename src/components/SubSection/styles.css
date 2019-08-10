@@ -1,13 +1,10 @@
 .container {
     display: grid;
-    grid-template-columns: [left-pad-start] 5% [left-pad-end logo-start] 32% [logo-end pillar-start] 10% [pillar-end bullets-start] 48% [bullets-end right-pad-start] 5% [right-pad-end];
-    grid-template-rows: [title-start] 15% [title-end logo-start] 10% [logo-middle] 50% [logo-end buffer-start] 5% [buffer-end link-start] 10% [link-end bottom-pad-start] 10% [bottom-pad-end];
-    border: solid;
+    grid-template-columns: [left-pad-start] 5vw [left-pad-end logo-start] 32vw [logo-end pillar-start] 10vw [pillar-end bullets-start] 48vw [bullets-end right-pad-start] 5vw [right-pad-end];
+    grid-template-rows: [title-start] 15vh [title-end logo-start] 10vh [logo-middle] 50vh [logo-end buffer-start] 5vh [buffer-end link-start] 10vh [link-end bottom-pad-start] 10vh [bottom-pad-end];
     background-color: cyan;
     font-size: 1em;
     color: yellow;
-    width: 100%;
-    min-height: 100vh;
 }
 
 .li {
