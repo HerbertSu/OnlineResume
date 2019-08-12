@@ -8,6 +8,12 @@ import Landing from './components/Landing/Landing';
 import SubSection from './components/SubSection/SubSection';
 import ContentGuide from './components/ContentGuide/ContentGuide';
 
+import * as bp from './images/bruin_partners.png';
+import * as ec_rec from './images/ec_rec.png';
+import * as elfin from './images/elfin.png';
+import * as infosys from './images/infosys.jpg';
+import * as interact from './images/interact.png';
+
 /**
  * TODO:
  *  x  -Add picture to top left
@@ -17,6 +23,7 @@ import ContentGuide from './components/ContentGuide/ContentGuide';
  *  x  -Remove react-scrollable-anchor; replace with react-fullpage
  *  x  -Add a "Table of Contents" section after landing telling the color scheme of backgrounds
  *    -Collect pictures of my companies'/experiences' logos
+ *      -Infosys, ELFIN, BaPSF, EC Camp Counselor, Bruin Partners, Interact Webmaster, Poligo, Meet Your Infoscions, This website
  *    -Add content to each experience section
  *    -Color Scheme possibilities: 
  *        -Turquoise, coral, ivory
@@ -25,7 +32,18 @@ import ContentGuide from './components/ContentGuide/ContentGuide';
 
 let options = {
   activeClass:          'active', // the class that is appended to the sections links
-  anchors:              ["landing","tableOfContents","section1", "section2", "section3"], // the anchors for each sections
+  anchors:              ["landing",
+                          "contentGuide",
+                          "experience/infosys", 
+                          "experience/elfin", 
+                          "experience/baspf", 
+                          "experience/ec_community",
+                          "projects/poligo",
+                          "projects/meet_your_coworkers",
+                          "projects/herbert.su.io",
+                          "volunteer/bruin_partners",
+                          "volunteer/interact",
+                        ], // the anchors for each sections
   arrowNavigation:      true, // use arrow keys
   className:            'SectionContainer', // the class name for the section container
   delay:                1000, // the scroll animation speed
@@ -37,6 +55,10 @@ let options = {
   verticalAlign:        false // align the content of each section vertical
 };
 
+const EXP_COLOR = "#40e0d0";
+const PRO_COLOR = "#f88379";
+const VOL_COLOR = "#ecdb84";
+
 class App extends Component {
 
   render()
@@ -44,7 +66,7 @@ class App extends Component {
     return ( 
       <div className="App">
              
-        <div className="floatingMenu">
+        {/* <div className="floatingMenu">
           <ul style={{listStyle : 'none'}}>
             <li>
               <a href='#section1'>Section 1</a>
@@ -56,7 +78,7 @@ class App extends Component {
               <a href='#section3'>Section 3</a>
             </li>
           </ul>
-        </div>
+        </div> */}
 
         <SectionsContainer {...options}>
           <Section>
@@ -66,13 +88,31 @@ class App extends Component {
             <ContentGuide/>
           </Section>
           <Section>
-            <SubSection title={'Work Experience'}/>
+            <SubSection title={'Infosys'} backgroundColor={EXP_COLOR} source={infosys}/>
           </Section>
           <Section>
-            <SubSection title={'Volunteer Experience'} backgroundColor={"#000010"} style={{display:'grid'}}/>
+            <SubSection title={'ELFIN'} backgroundColor={EXP_COLOR} source={elfin}/>
           </Section>
           <Section>
-            <SubSection title={'Projects'} />
+            <SubSection title={'BaPSF'} backgroundColor={EXP_COLOR}/>
+          </Section>
+          <Section>
+            <SubSection title={'El Cerrito Community Center'} backgroundColor={EXP_COLOR} source={ec_rec}/>
+          </Section>
+          <Section>
+            <SubSection title={'Poligo'} backgroundColor={PRO_COLOR} />
+          </Section>
+          <Section>
+            <SubSection title={'Meet Your Infoscions'} backgroundColor={PRO_COLOR}/>
+          </Section>
+          <Section>
+            <SubSection title={'Herbert.su.io'} backgroundColor={PRO_COLOR}/>
+          </Section>
+          <Section>
+            <SubSection title={'Bruin Partners'} backgroundColor={VOL_COLOR} source={bp}/>
+          </Section>
+          <Section>
+            <SubSection title={'Interact'} backgroundColor={VOL_COLOR} source={interact}/>
           </Section>
         </SectionsContainer>
       </div>
