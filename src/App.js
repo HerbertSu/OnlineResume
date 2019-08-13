@@ -14,6 +14,13 @@ import * as elfin from './images/elfin.png';
 import * as infosys from './images/infosys.jpg';
 import * as interact from './images/interact.png';
 
+import {
+  INFOSYS_DESC,
+  INFOSYS_SKILLS,
+} from './bios';
+
+import * as links from './links';
+
 /**
  * TODO:
  *  x  -Add picture to top left
@@ -88,19 +95,19 @@ class App extends Component {
             <ContentGuide/>
           </Section>
           <Section>
-            <SubSection title={'Infosys'} backgroundColor={EXP_COLOR} source={infosys}/>
+            <SubSection title={'Infosys'} link={links.INFOSYS} skills={INFOSYS_SKILLS} description={INFOSYS_DESC} backgroundColor={EXP_COLOR} source={infosys}/>
           </Section>
           <Section>
-            <SubSection title={'ELFIN'} backgroundColor={EXP_COLOR} source={elfin}/>
+            <SubSection title={'ELFIN'} link={links.ELFIN} backgroundColor={EXP_COLOR} source={elfin}/>
           </Section>
           <Section>
-            <SubSection title={'BaPSF'} backgroundColor={EXP_COLOR}/>
+            <SubSection title={'BaPSF'} link={links.BAPSF} backgroundColor={EXP_COLOR}/>
           </Section>
           <Section>
-            <SubSection title={'El Cerrito Community Center'} backgroundColor={EXP_COLOR} source={ec_rec}/>
+            <SubSection title={'El Cerrito Community Center'} link={links.EC_REC} backgroundColor={EXP_COLOR} source={ec_rec}/>
           </Section>
           <Section>
-            <SubSection title={'Poligo'} backgroundColor={PRO_COLOR} />
+            <SubSection title={'Poligo'} link={links.POLIGO} backgroundColor={PRO_COLOR} />
           </Section>
           <Section>
             <SubSection title={'Meet Your Infoscions'} backgroundColor={PRO_COLOR}/>
@@ -109,7 +116,7 @@ class App extends Component {
             <SubSection title={'Herbert.su.io'} backgroundColor={PRO_COLOR}/>
           </Section>
           <Section>
-            <SubSection title={'Bruin Partners'} backgroundColor={VOL_COLOR} source={bp}/>
+            <SubSection title={'Bruin Partners'} link={links.BRUIN_P} backgroundColor={VOL_COLOR} source={bp}/>
           </Section>
           <Section>
             <SubSection title={'Interact'} backgroundColor={VOL_COLOR} source={interact}/>

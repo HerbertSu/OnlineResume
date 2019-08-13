@@ -38,6 +38,10 @@
     grid-row-end : logo-end;
 }
 
+#skillsTitle{
+    font-size: 2em;
+}
+
 #title{
     grid-column-start: left-pad-start;
     grid-column-end: right-pad-end;

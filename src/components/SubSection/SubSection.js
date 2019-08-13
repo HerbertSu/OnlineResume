@@ -38,15 +38,33 @@ class SubSection extends Component{
                     }
                     
                 </div>
-                <div id="linkToCompany">
-                    <a className="button" onClick={()=>this.props.goToTop()}> Visit </a>
-                </div>
+                
+                
+                {this.props.link != null ?
+                    <div id="linkToCompany">
+                        <a className="button" onClick={()=>window.location = this.props.link}> Visit </a>
+                    </div>
+                :
+                    <div></div>
+                }
                 <div id="expDescription">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    {!(this.props.description == undefined)?
+                        this.props.description 
+                    :
+                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                    }
                 </div>
                 <div id="expSkills">
+                    <text id="skillsTitle">
+                        Notable Skills
+                    </text>
                     <ul>
-                        <Bullets bullets={this.bulletDescriptions("Hi my name is Herbert Su".split(" "))}/>
+                        {this.props.skills != null ?
+                            <Bullets bullets={this.bulletDescriptions(this.props.skills)}/>
+                        :
+                            <Bullets bullets={this.bulletDescriptions("Hi my name is Herbert Su".split(" "))}/>
+                        }
+                        
                     </ul>
                 </div>
                 
