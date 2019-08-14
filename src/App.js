@@ -13,13 +13,15 @@ import * as ec_rec from './images/ec_rec.png';
 import * as elfin from './images/elfin.png';
 import * as infosys from './images/infosys.jpg';
 import * as interact from './images/interact.png';
+import * as bapsf from './images/bapsf.jpg';
+import * as poligo from './images/poligo.jpg';
+import * as coworkers from './images/coworkers.png';
+import * as website from './images/website.png';
 
-import {
-  INFOSYS_DESC,
-  INFOSYS_SKILLS,
-} from './bios';
+import * as bios from './bios';
 
 import * as links from './links';
+import { SSL_OP_SINGLE_DH_USE } from 'constants';
 
 /**
  * TODO:
@@ -95,31 +97,31 @@ class App extends Component {
             <ContentGuide/>
           </Section>
           <Section>
-            <SubSection title={'Infosys'} link={links.INFOSYS} skills={INFOSYS_SKILLS} description={INFOSYS_DESC} backgroundColor={EXP_COLOR} source={infosys}/>
+            <SubSection title={'Infosys'} link={links.INFOSYS} skills={bios.INFOSYS_SKILLS} description={bios.INFOSYS_DESC} backgroundColor={EXP_COLOR} source={infosys}/>
           </Section>
           <Section>
-            <SubSection title={'ELFIN'} link={links.ELFIN} backgroundColor={EXP_COLOR} source={elfin}/>
+            <SubSection title={'ELFIN'} link={links.ELFIN} skills={bios.ELFIN_SKILLS} description={bios.ELFIN_DESC} backgroundColor={EXP_COLOR} source={elfin}/>
           </Section>
           <Section>
-            <SubSection title={'BaPSF'} link={links.BAPSF} backgroundColor={EXP_COLOR}/>
+            <SubSection title={'BaPSF'} link={links.BAPSF} skills={bios.BAPSF_SKILLS} description={bios.BAPSF_DESC} backgroundColor={EXP_COLOR} source={bapsf}/>
           </Section>
           <Section>
-            <SubSection title={'El Cerrito Community Center'} link={links.EC_REC} backgroundColor={EXP_COLOR} source={ec_rec}/>
+            <SubSection title={'El Cerrito Community Center'} link={links.EC_REC} skills={bios.EC_SKILLS} description={bios.EC_DESC} backgroundColor={EXP_COLOR} source={ec_rec}/>
           </Section>
           <Section>
-            <SubSection title={'Poligo'} link={links.POLIGO} backgroundColor={PRO_COLOR} />
+            <SubSection title={'Poligo'} link={links.POLIGO} skills={bios.POLGIO_SKILLS} description={bios.POLIGO_DESC} backgroundColor={PRO_COLOR} source={poligo}/>
           </Section>
           <Section>
-            <SubSection title={'Meet Your Infoscions'} backgroundColor={PRO_COLOR}/>
+            <SubSection title={'Meet Your Coworkers'} skills={bios.COWORKERS_SKILLS} description={bios.COWORKERS_DESC} backgroundColor={PRO_COLOR} source={coworkers}/>
           </Section>
           <Section>
-            <SubSection title={'Herbert.su.io'} backgroundColor={PRO_COLOR}/>
+            <SubSection title={'Herbert.su.io'} skills={bios.WEBSITE_SKILLS} description={bios.WEBSITE_DESC} backgroundColor={PRO_COLOR} source={website}/>
           </Section>
           <Section>
-            <SubSection title={'Bruin Partners'} link={links.BRUIN_P} backgroundColor={VOL_COLOR} source={bp}/>
+            <SubSection title={'Bruin Partners'} skills={bios.BRUIN_PARTNERS_SKILLS} description={bios.BRUIN_PARTNERS_DESC} link={links.BRUIN_P} backgroundColor={VOL_COLOR} source={bp}/>
           </Section>
           <Section>
-            <SubSection title={'Interact'} backgroundColor={VOL_COLOR} source={interact}/>
+            <SubSection title={'Interact'} skills={bios.INTERACT_SKILLS} description={bios.INTERACT_DESC} backgroundColor={VOL_COLOR} source={interact}/>
           </Section>
         </SectionsContainer>
       </div>

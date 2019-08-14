@@ -55,9 +55,9 @@ class SubSection extends Component{
                     }
                 </div>
                 <div id="expSkills">
-                    <text id="skillsTitle">
+                    {/* <text id="skillsTitle">
                         Notable Skills
-                    </text>
+                    </text> */}
                     <ul>
                         {this.props.skills != null ?
                             <Bullets bullets={this.bulletDescriptions(this.props.skills)}/>
