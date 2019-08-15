@@ -45,7 +45,7 @@ let options = {
                           "contentGuide",
                           "experience/infosys", 
                           "experience/elfin", 
-                          "experience/baspf", 
+                          "experience/bapsf", 
                           "experience/ec_community",
                           "projects/poligo",
                           "projects/meet_your_coworkers",
