@@ -73,11 +73,13 @@
 }
 
 .button{
-    background-color: #4CaF50;
+    background-color: white;
     padding: 10px;
     height: 20px;
-    color: white;
+    color: rgb(2, 3, 35);
     cursor: pointer;
+    border-radius: 20px;
+    font-weight: bold;
     /* position: fixed; */
     /* right: 0;  */
     /* bottom: 15%; */

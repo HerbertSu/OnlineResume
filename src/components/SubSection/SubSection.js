@@ -42,7 +42,9 @@ class SubSection extends Component{
                 
                 {this.props.link != null ?
                     <div id="linkToCompany">
-                        <a className="button" onClick={()=>window.location = this.props.link}> Visit </a>
+                        <div className="zoom">
+                            <a className="button" onClick={()=>window.location = this.props.link}> Visit </a>
+                        </div>>
                     </div>
                 :
                     <div></div>
