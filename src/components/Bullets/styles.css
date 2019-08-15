@@ -1,5 +1,4 @@
 .bulletContainer{
-    width: 75vh;
-    border: solid;
-    border-color: red;
+    /* width: 75vh; */
+    text-align: left;
 }

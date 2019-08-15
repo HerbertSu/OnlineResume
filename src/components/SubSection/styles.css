@@ -1,20 +1,33 @@
 .container {
     display: grid;
-    grid-template-columns: [left-pad-start] 5% [left-pad-end logo-start] 32% [logo-end pillar-start] 10% [pillar-end bullets-start] 48% [bullets-end right-pad-start] 5% [right-pad-end];
-    grid-template-rows: [title-start] 15% [title-end logo-start] 10% [logo-middle] 50% [logo-end buffer-start] 5% [buffer-end link-start] 10% [link-end bottom-pad-start] 10% [bottom-pad-end];
-    border: solid;
-    background-color: cyan;
+    grid-template-columns: [left-pad-start] 5vw [left-pad-end logo-start] 32vw [logo-end pillar-start] 10vw [pillar-end bullets-start] 48vw [bullets-end right-pad-start] 5vw [right-pad-end];
+    grid-template-rows: [title-start] 20vh [title-end logo-start] 5vh [exp-description-start] 40vh [exp-description-end exp-skills-start] 10vh [logo-end buffer-start] 5vh [buffer-end link-start] 10vh [link-end bottom-pad-start] 10vh [bottom-pad-end];
     font-size: 1em;
-    color: yellow;
-    width: 100%;
-    min-height: 100vh;
+    color: rgb(2, 3, 35);
 }
 
 .li {
     font-size: 1em;
-    border: solid;
-    color: green;
+    color: rgb(2, 3, 35);
 } 
+
+#leftFill{
+    grid-column: left-pad-start / pillar-end;
+    grid-row: logo-start / bottom-pad-end;
+    background-color: rgb(2, 3, 35);
+}
+
+#rightFill{
+    grid-column: right-pad-start / right-pad-end;
+    grid-row: logo-start / bottom-pad-end;
+    background-color: rgb(2, 3, 35);
+}
+
+/* #bottomFill{
+    grid-column: left-pad-start / right-pad-end;
+    grid-row: bottom-pad-start / bottom-pad-end;
+    background-color: rgb(2, 3, 35);
+} */
 
 #logo{
     display: flex;
@@ -25,22 +38,38 @@
     grid-row-end : logo-end;
 }
 
-#title{
-    grid-column-start: logo-start;
-    grid-column-end: right-pad-start;
-    grid-row-start: title-start;
-    grid-row-end: title-end;
-    border: solid;
-    font-size: 200%;
-    font-weight: bold;
-    text-transform: uppercase;
+#skillsTitle{
+    font-size: 2em;
 }
 
-#content{
+#title{
+    grid-column-start: left-pad-start;
+    grid-column-end: right-pad-end;
+    grid-row-start: title-start;
+    grid-row-end: title-end;
+    
+    text-transform: uppercase;
+    
+    font-size: 4em;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    background-color: rgb(2, 3, 35);
+}
+
+#expDescription{
+    grid-column: bullets-start / bullets-end;
+    grid-row: exp-description-start / exp-description-end;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#expSkills{
     grid-column-start: bullets-start;
     grid-column-end: bullets-end;
-    grid-row-start: logo-middle;
+    grid-row-start: exp-skills-start;
     grid-row-end: bottom-pad-start;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .button{
