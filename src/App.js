@@ -38,7 +38,7 @@ import { SSL_OP_SINGLE_DH_USE } from 'constants';
  *        -Turquoise, coral, ivory
  *        -#A299CA (lavendar), #7CCAAE (green), #ECEC84 (lemon)
  */
-
+ 
 let options = {
   activeClass:          'active', // the class that is appended to the sections links
   anchors:              ["landing",

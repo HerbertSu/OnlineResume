@@ -53,7 +53,7 @@ export const EC_SKILLS = [
 
 export const POLIGO_DESC = `
 PoliGo began as an idea when I was a Junior at UCLA. 
-Having just watched the election of Donald Trump, I began to wonder if Americans truly understood what went on in the world of politics.
+Having just watched the results of the presidential elections of 2016, I began to wonder if Americans truly understood what went on in the world of politics.
 PoliGo is a mobile app I prototyped on Android with the mission of providing transparency on the political interests of their elected officials.
 `;
 
