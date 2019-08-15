@@ -1,7 +1,7 @@
 .container {
     display: grid;
     grid-template-columns: [left-pad-start] 5vw [left-pad-end logo-start] 32vw [logo-end pillar-start] 10vw [pillar-end bullets-start] 48vw [bullets-end right-pad-start] 5vw [right-pad-end];
-    grid-template-rows: [title-start] 20vh [title-end logo-start] 5vh [exp-description-start] 40vh [exp-description-end exp-skills-start] 10vh [logo-end buffer-start] 5vh [buffer-end link-start] 10vh [link-end bottom-pad-start] 10vh [bottom-pad-end];
+    grid-template-rows: [title-start] 20vh [title-end logo-start] 5vh [exp-description-start] 40vh [exp-description-end exp-skills-start] 10vh [logo-end buffer-start] 5vh [buffer-end link-start] 10vh [link-end exp-skills-end bottom-pad-start] 10vh [bottom-pad-end];
     font-size: 1em;
     color: rgb(2, 3, 35);
 }
@@ -59,6 +59,13 @@
 #expDescription{
     grid-column: bullets-start / bullets-end;
     grid-row: exp-description-start / exp-description-end;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#fullDescription{
+    grid-column: bullets-start / bullets-end;
+    grid-row: exp-description-start / exp-skills-end;
     padding-left: 15px;
     padding-right: 15px;
 }
