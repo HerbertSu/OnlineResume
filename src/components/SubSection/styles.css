@@ -1,0 +1,91 @@
+.container {
+    display: grid;
+    grid-template-columns: [left-pad-start] 5vw [left-pad-end logo-start] 32vw [logo-end pillar-start] 10vw [pillar-end bullets-start] 48vw [bullets-end right-pad-start] 5vw [right-pad-end];
+    grid-template-rows: [title-start] 20vh [title-end logo-start] 5vh [exp-description-start] 40vh [exp-description-end exp-skills-start] 10vh [logo-end buffer-start] 5vh [buffer-end link-start] 10vh [link-end bottom-pad-start] 10vh [bottom-pad-end];
+    font-size: 1em;
+    color: rgb(2, 3, 35);
+}
+
+.li {
+    font-size: 1em;
+    color: rgb(2, 3, 35);
+} 
+
+#leftFill{
+    grid-column: left-pad-start / pillar-end;
+    grid-row: logo-start / bottom-pad-end;
+    background-color: rgb(2, 3, 35);
+}
+
+#rightFill{
+    grid-column: right-pad-start / right-pad-end;
+    grid-row: logo-start / bottom-pad-end;
+    background-color: rgb(2, 3, 35);
+}
+
+/* #bottomFill{
+    grid-column: left-pad-start / right-pad-end;
+    grid-row: bottom-pad-start / bottom-pad-end;
+    background-color: rgb(2, 3, 35);
+} */
+
+#logo{
+    display: flex;
+    flex: 1;
+    grid-column-start : logo-start;
+    grid-column-end : logo-end;
+    grid-row-start : logo-start;
+    grid-row-end : logo-end;
+}
+
+#skillsTitle{
+    font-size: 2em;
+}
+
+#title{
+    grid-column-start: left-pad-start;
+    grid-column-end: right-pad-end;
+    grid-row-start: title-start;
+    grid-row-end: title-end;
+    
+    text-transform: uppercase;
+    
+    font-size: 4em;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    background-color: rgb(2, 3, 35);
+}
+
+#expDescription{
+    grid-column: bullets-start / bullets-end;
+    grid-row: exp-description-start / exp-description-end;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#expSkills{
+    grid-column-start: bullets-start;
+    grid-column-end: bullets-end;
+    grid-row-start: exp-skills-start;
+    grid-row-end: bottom-pad-start;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.button{
+    background-color: #4CaF50;
+    padding: 10px;
+    height: 20px;
+    color: white;
+    cursor: pointer;
+    /* position: fixed; */
+    /* right: 0;  */
+    /* bottom: 15%; */
+}
+
+#linkToCompany{
+    grid-column-start: left-pad-end;
+    grid-column-end: pillar-start;
+    grid-row-start: link-start;
+    grid-row-end: link-end;
+}
