@@ -17,8 +17,9 @@
 }
 
 .floatingMenu{
+  text-align: right;
   position: fixed;
-  right: 1vw;
+  right: 0;
   bottom: 1vh;
   color: white;
   z-index: 1;

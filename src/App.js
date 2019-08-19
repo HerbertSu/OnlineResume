@@ -41,7 +41,7 @@ import { SSL_OP_SINGLE_DH_USE } from 'constants';
  
 let options = {
   activeClass:          'active', // the class that is appended to the sections links
-  anchors:              ["landing",
+  anchors:              ["",
                           "contentGuide",
                           "experience/infosys", 
                           "experience/elfin", 
@@ -49,14 +49,14 @@ let options = {
                           // "experience/ec_community",
                           "projects/poligo",
                           "projects/meet_your_coworkers",
-                          "projects/herbert.su.io",
+                          "projects/herbertsu.io",
                           "volunteer/bruin_partners",
                           "volunteer/interact",
                         ], // the anchors for each sections
   arrowNavigation:      true, // use arrow keys
   className:            'SectionContainer', // the class name for the section container
   delay:                1000, // the scroll animation speed
-  navigation:           true, // use dots navigatio
+  navigation:           false, // use dots navigatio
   scrollBar:            false, // use the browser default scrollbar
   sectionClassName:     'Section', // the section class name
   sectionPaddingTop:    '0', // the section top padding
@@ -77,13 +77,37 @@ class App extends Component {
         <div className="floatingMenu">
           <ul style={{listStyle : 'none'}}>
             <li>
-              <a href='#volunteer/bruin_partners'>Section 1</a>
+              <a href='#'>Home</a>
             </li>
             <li>
-              <a href='#section2'>Section 2</a>
+              <a href='#contentGuide'>Content Guide</a>
             </li>
             <li>
-              <a href='#section3'>Section 3</a>
+              <a href='#experience/infosys'>Infosys</a>
+            </li>
+            <li>
+              <a href='#experience/elfin'>ELFIN</a>
+            </li>
+            <li>
+              <a href='#experience/bapsf'>BaPSF</a>
+            </li>
+            <li>
+              <a href='#projects/poligo'>Poligo</a>
+            </li>
+            <li>
+              <a href='#volunteer/bruin_partners'>Bruin Partners</a>
+            </li>
+            <li>
+              <a href='#projects/meet_your_coworkers'>Meet Your Coworkers</a>
+            </li>
+            <li>
+              <a href='#projects/herbertsu.io'>Herbertsu.io</a>
+            </li>
+            <li>
+              <a href='#volunteer/bruin_partners'>Bruin Partners</a>
+            </li>
+            <li>
+              <a href='#volunteer/interact'>Interact</a>
             </li>
           </ul>
         </div>
@@ -114,7 +138,7 @@ class App extends Component {
               <SubSection title={'Meet Your Coworkers'} skills={bios.COWORKERS_SKILLS} description={bios.COWORKERS_DESC} backgroundColor={PRO_COLOR} source={coworkers}/>
             </Section>
             <Section>
-              <SubSection title={'Herbert.su.io'} skills={bios.WEBSITE_SKILLS} description={bios.WEBSITE_DESC} backgroundColor={PRO_COLOR} source={website}/>
+              <SubSection title={'Herbertsu.io'} skills={bios.WEBSITE_SKILLS} description={bios.WEBSITE_DESC} backgroundColor={PRO_COLOR} source={website}/>
             </Section>
             <Section>
               <SubSection title={'Bruin Partners'} skills={bios.BRUIN_PARTNERS_SKILLS} description={bios.BRUIN_PARTNERS_DESC} link={links.BRUIN_P} backgroundColor={VOL_COLOR} source={bp}/>
