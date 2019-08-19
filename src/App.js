@@ -46,7 +46,7 @@ let options = {
                           "experience/infosys", 
                           "experience/elfin", 
                           "experience/bapsf", 
-                          "experience/ec_community",
+                          // "experience/ec_community",
                           "projects/poligo",
                           "projects/meet_your_coworkers",
                           "projects/herbert.su.io",
@@ -105,9 +105,9 @@ class App extends Component {
           <Section>
             <SubSection title={'BaPSF'} link={links.BAPSF} skills={bios.BAPSF_SKILLS} description={bios.BAPSF_DESC} backgroundColor={EXP_COLOR} source={bapsf}/>
           </Section>
-          <Section>
+          {/* <Section>
             <SubSection title={'El Cerrito Community Center'} link={links.EC_REC} skills={bios.EC_SKILLS} description={bios.EC_DESC} backgroundColor={EXP_COLOR} source={ec_rec}/>
-          </Section>
+          </Section> */}
           <Section>
             <SubSection title={'Poligo'} link={links.POLIGO} skills={bios.POLGIO_SKILLS} description={bios.POLIGO_DESC} backgroundColor={PRO_COLOR} source={poligo}/>
           </Section>
