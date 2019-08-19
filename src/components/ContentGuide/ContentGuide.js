@@ -12,7 +12,7 @@ export default class ContentGuide extends Component{
                     AboutMe
                 </div>
                 <div id="expSectionName" className="contentSectionNames exp">
-                    Programming Experience
+                    Job Experience
                 </div>
                 <div id="projectsSectionName" className="contentSectionNames project">
                     Projects
@@ -33,13 +33,13 @@ export default class ContentGuide extends Component{
                     <ul>
                         <li>Poligo</li>
                         <li>Meet Your Coworkers</li>
-                        <li>Herbert.su.io</li>
+                        <li>My Online Resume</li>
                     </ul>
                 </div>
                 <div id="volunteerSection" className="contentSection">
                     <ul>
                         <li>Bruin Partners</li>
-                        <li>Undergraduate TA</li>
+                        {/* <li>Undergraduate TA</li> */}
                         <li>Interact Webmaster</li>
                     </ul>
                 </div>
