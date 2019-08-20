@@ -1,0 +1,18 @@
+.element-container{
+    width: 5vw;
+    height: fit-content;
+    transition: width 0.5s;
+}
+
+.element-container:hover{
+    width: 300px;
+}
+
+.element-container a{
+    color: transparent;
+}
+
+.element-container a:hover{
+    color: black;
+    width: 300px;
+}

@@ -7,6 +7,7 @@ import './App.css';
 import Landing from './components/Landing/Landing';
 import SubSection from './components/SubSection/SubSection';
 import ContentGuide from './components/ContentGuide/ContentGuide';
+import SideMenu from './components/SideMenu/SideMenu';
 
 import * as bp from './images/bruin_partners.png';
 import * as ec_rec from './images/ec_rec.png';
@@ -27,12 +28,12 @@ import { SSL_OP_SINGLE_DH_USE } from 'constants';
  * TODO:
  *  x  -Add picture to top left
  *    -Add side menu
- *    -Add button to link to other websites.
+ *  x  -Add button to link to other websites.
  *    -Add parallax
  *  x  -Remove react-scrollable-anchor; replace with react-fullpage
  *  x  -Add a "Table of Contents" section after landing telling the color scheme of backgrounds
- *    -Collect pictures of my companies'/experiences' logos
- *      -Infosys, ELFIN, BaPSF, EC Camp Counselor, Bruin Partners, Interact Webmaster, Poligo, Meet Your Infoscions, This website
+ *  x  -Collect pictures of my companies'/experiences' logos
+ *  x    -Infosys, ELFIN, BaPSF, EC Camp Counselor, Bruin Partners, Interact Webmaster, Poligo, Meet Your Infoscions, This website
  *    -Add content to each experience section
  *    -Color Scheme possibilities: 
  *        -Turquoise, coral, ivory
@@ -75,41 +76,7 @@ class App extends Component {
     return ( 
       <div className="App">
         <div className="floatingMenu">
-          <ul style={{listStyle : 'none'}}>
-            <li>
-              <a href='#'>Home</a>
-            </li>
-            <li>
-              <a href='#contentGuide'>Content Guide</a>
-            </li>
-            <li>
-              <a href='#experience/infosys'>Infosys</a>
-            </li>
-            <li>
-              <a href='#experience/elfin'>ELFIN</a>
-            </li>
-            <li>
-              <a href='#experience/bapsf'>BaPSF</a>
-            </li>
-            <li>
-              <a href='#projects/poligo'>Poligo</a>
-            </li>
-            <li>
-              <a href='#volunteer/bruin_partners'>Bruin Partners</a>
-            </li>
-            <li>
-              <a href='#projects/meet_your_coworkers'>Meet Your Coworkers</a>
-            </li>
-            <li>
-              <a href='#projects/herbertsu.io'>Herbertsu.io</a>
-            </li>
-            <li>
-              <a href='#volunteer/bruin_partners'>Bruin Partners</a>
-            </li>
-            <li>
-              <a href='#volunteer/interact'>Interact</a>
-            </li>
-          </ul>
+          <SideMenu/>
         </div>
         <div id="fullpage">
           <SectionsContainer {...options}>
