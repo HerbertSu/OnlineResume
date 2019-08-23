@@ -27,13 +27,15 @@ import { SSL_OP_SINGLE_DH_USE } from 'constants';
  * TODO:
  *  x  -Add picture to top left
  *    -Add side menu
- *    -Add button to link to other websites.
+ *  x  -Add button to link to other websites.
  *    -Add parallax
  *  x  -Remove react-scrollable-anchor; replace with react-fullpage
  *  x  -Add a "Table of Contents" section after landing telling the color scheme of backgrounds
  *    -Collect pictures of my companies'/experiences' logos
  *      -Infosys, ELFIN, BaPSF, EC Camp Counselor, Bruin Partners, Interact Webmaster, Poligo, Meet Your Infoscions, This website
  *    -Add content to each experience section
+ *    -Make the website compatabile with Edge, Explorer, and Firefox.
+ *    -Make the website compatabile one mobile.
  *    -Color Scheme possibilities: 
  *        -Turquoise, coral, ivory
  *        -#A299CA (lavendar), #7CCAAE (green), #ECEC84 (lemon)
