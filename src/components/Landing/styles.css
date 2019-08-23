@@ -77,3 +77,89 @@
     font-family: 'Raleway', sans-serif;
     font-size: 0.5em;
 }
+
+@media screen and (max-width: 600px){
+    #landing{
+        display: grid;
+        grid-template-columns: [c-photo-start c-left-start] 25vw [c-photo-end c-second-col-start] 75vw [c-second-col-end];
+        grid-template-rows: [r-name-start] 25vh [r-name-end r-photo-start r-email-start] 12.5vh [r-email-end r-cell-start] 12.5vh [r-photo-end r-cell-end r-about-me-start] 50vh [r-about-me-end];
+        position: relative;
+        background-color: rgb(2, 3, 35);
+        background: linear-gradient(180deg, rgb(2, 3, 35) 50%, white 50%);
+    }
+    
+    #portrait{
+        grid-column-start: c-photo-start;
+        grid-column-end: c-photo-end;
+        grid-row-start: r-photo-start;
+        grid-row-end: r-photo-end;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        object-fit: cover;
+        height: 100%;
+        width: auto;
+        /* width: 67.5%;
+        max-height: 100%; */
+    }
+    
+    #headline{
+        grid-column-start: c-left-start;
+        grid-column-end: c-second-col-end;
+        grid-row-start: r-name-start;
+        grid-row-end: r-name-end;
+        position: static;
+        text-align: center;
+        font-size: 4em;
+        font-family: 'Oswald', sans-serif;
+        color: white;
+    }
+    #headline div{
+        font-size: 0.5em;
+    }
+    
+    #email{
+        grid-column-start: c-photo-start;
+        grid-column-end: c-second-col-end;
+        grid-row-start: r-email-start;
+        grid-row-end: r-email-end;
+        text-align: left;
+        position: absolute;
+        left: 25vh;
+        top:0;
+        font-family: 'Raleway', sans-serif;
+        color: white;
+        padding-left: 5px;
+    }
+    
+    #cellPhone{
+        grid-column-start: c-photo-start;
+        grid-column-end: c-second-col-end;
+        grid-row-start: r-cell-start;
+        grid-row-end: r-cell-end;
+        text-align: left;
+        position: absolute;
+        left: 25vh;
+        font-family: 'Raleway', sans-serif;
+        color: white;
+        padding-left: 5px;
+    }
+    
+    #aboutMe{
+        grid-column-start: c-left-start;
+        grid-column-end: c-second-col-end;
+        grid-row-start: r-about-me-start;
+        grid-row-end: r-about-me-end;
+        text-align: start;
+        font-family: 'Oswald', sans-serif;
+        font-size: 2em;
+        padding: 5px;
+    }
+    
+    #aboutMe div{
+        font-family: 'Raleway', sans-serif;
+        font-size: 0.5em;
+        padding: 5px;
+    }
+}
