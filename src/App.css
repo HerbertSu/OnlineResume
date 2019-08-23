@@ -16,12 +16,9 @@
   color: white;
 }
 
+
 .floatingMenu{
   position: fixed;
-  right: 0;
-  z-index: 1;
-}
-
-.fullpage{
-  z-index: -1;
+  right: 1%;
+  bottom: 1%;
 }
