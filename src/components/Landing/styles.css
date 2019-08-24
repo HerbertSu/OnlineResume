@@ -82,7 +82,8 @@
     #landing{
         display: grid;
         grid-template-columns: [c-photo-start c-left-start] 25vw [c-photo-end c-second-col-start] 75vw [c-second-col-end];
-        grid-template-rows: [r-name-start] 25vh [r-name-end r-photo-start r-email-start] 12.5vh [r-email-end r-cell-start] 12.5vh [r-photo-end r-cell-end r-about-me-start] 50vh [r-about-me-end];
+        grid-template-rows: [r-name-start r-photo-start] 25vh [r-photo-end r-name-end r-email-start] 12.5vh [r-email-end r-cell-start] 12.5vh [r-cell-end r-about-me-start] 50vh [r-about-me-end];
+        /* grid-template-rows: [r-name-start] 15vh [r-name-end r-email-start] 5vh [r-email-end r-cell-start] 5vh [r-cell-end r-photo-start] 25vh [r-photo-end r-about-me-start] 50vh [r-about-me-end]; */
         position: relative;
         background-color: rgb(2, 3, 35);
         background: linear-gradient(180deg, rgb(2, 3, 35) 50%, white 50%);
@@ -109,11 +110,12 @@
         grid-column-end: c-second-col-end;
         grid-row-start: r-name-start;
         grid-row-end: r-name-end;
-        position: static;
-        text-align: center;
-        font-size: 4em;
+        /* position: static;
+        text-align: right; */
+        font-size: 3em;
         font-family: 'Oswald', sans-serif;
         color: white;
+        padding-left: 10vw;
     }
     #headline div{
         font-size: 0.5em;
@@ -124,13 +126,11 @@
         grid-column-end: c-second-col-end;
         grid-row-start: r-email-start;
         grid-row-end: r-email-end;
-        text-align: left;
-        position: absolute;
-        left: 25vh;
-        top:0;
+        text-align: center;
+        position: static;
         font-family: 'Raleway', sans-serif;
         color: white;
-        padding-left: 5px;
+        padding-top: 5vh;
     }
     
     #cellPhone{
@@ -138,12 +138,10 @@
         grid-column-end: c-second-col-end;
         grid-row-start: r-cell-start;
         grid-row-end: r-cell-end;
-        text-align: left;
-        position: absolute;
-        left: 25vh;
+        text-align: center;
+        position: static;
         font-family: 'Raleway', sans-serif;
         color: white;
-        padding-left: 5px;
     }
     
     #aboutMe{
