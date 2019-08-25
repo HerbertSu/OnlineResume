@@ -106,3 +106,103 @@ ul{
     grid-row: r-section-start / r-section-end;
     background-color: #ecdb84;
 }
+
+
+
+
+@media screen and (max-width: 600px){
+    #contentGuideContainer{
+        display: grid;
+        /* grid-template-columns: [c-left-buffer-start] 5vw [c-left-buffer-end c-first-divider-start] 0.5vw [c-first-divider-end c-first-quart-start] 1fr [c-first-quart-end c-second-divider-start] 0.5vw [c-second-divider-end c-second-quart-start] 1fr [c-second-quart-end c-third-divider-start] 0.5vw [c-third-divider-end c-third-quart-start] 1fr [c-third-quart-end c-fourth-divider-start] 0.5vw [c-fourth-divider-end c-fourth-quart-start] 1fr [c-fourth-quart-end c-fifth-divider-start] 0.5vw [c-fifth-divider-end c-right-buffer-start] 5vw [c-right-buffer-end]; */
+        grid-template-columns: [c-title-start] 35vw [c-title-end c-bullets-start] 65vw [c-bullets-end];
+        /* grid-template-rows: [r-title-start] 20vh [r-title-end r-section-names-start] 20vh [r-section-names-end r-section-start] 50vh [r-section-end r-bottom-buffer-start] 5vh [r-bottom-buffer-end]; */
+        grid-template-rows: [r-header-start] 12.5vh [r-header-end r-about-me-start] 21.875vh [r-about-me-end r-job-exp-start] 21.875vh [r-job-exp-end r-projects-start] 21.875vh [r-projects-end r-volunteer-start] 21.875vh [r-volunteer-end];
+        position: relative;
+        background-color: rgb(2, 3, 35);
+        background: linear-gradient(180deg, rgb(2, 3, 35) 12.5%, white 0%);
+    }
+    
+    #contentGuideTitle{
+        text-align: center;
+        grid-column: c-title-start / c-bullets-end;
+        grid-row: r-header-start /r-header-end;
+        font-size: 3em;
+        font-family: 'Oswald', sans-serif;
+        color: white;
+    }
+    
+    ul{
+        color: white;
+    }
+    
+    .contentSectionNames{
+        text-align: left;
+        bottom: 0;
+        font-size: 2em;
+        font-family: 'Oswald', sans-serif;
+        padding-left: 5px;
+    }
+    
+    .contentSection{
+        text-align: left;
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    .contentSection ul li{
+        padding:5px;
+    }
+    
+    .exp{
+        color: #40e0d0;
+    }
+    
+    .project{
+        color: #f88379;
+    
+    }
+    
+    .volunteer{
+        color: #ecdb84;
+    }
+    
+    #aboutMeSectionName{
+        grid-column: c-title-start / c-title-end;
+        grid-row: r-about-me-start / r-about-me-end;
+    }
+    
+    #expSectionName{
+        border-bottom: transparent;
+        grid-column: c-title-start / c-title-end;
+        grid-row: r-job-exp-start / r-job-exp-end;
+    }
+    
+    #projectsSectionName{
+        border-bottom: transparent;
+        grid-column: c-title-start / c-title-end;
+        grid-row: r-projects-start / r-projects-end;
+    }
+    
+    #volunteerSectionName{
+        border-bottom: transparent;
+        grid-column: c-title-start / c-title-end;
+        grid-row: r-volunteer-start / r-volunteer-end;
+    }
+    
+    #expSection{
+        grid-column: c-bullets-start / c-bullets-end;
+        grid-row: r-job-exp-start / r-job-exp-end;
+        background-color: #40e0d0;
+    }
+    
+    #projectsSection{
+        grid-column: c-bullets-start / c-bullets-end;
+        grid-row: r-projects-start / r-projects-end;
+        background-color: #f88379;
+    }
+    
+    #volunteerSection{
+        grid-column: c-bullets-start / c-bullets-end;
+        grid-row: r-volunteer-start / r-volunteer-end;
+        background-color: #ecdb84;
+    }
+  }
