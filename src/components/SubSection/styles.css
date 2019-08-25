@@ -98,3 +98,85 @@
     grid-row-start: link-start;
     grid-row-end: link-end;
 }
+
+@media screen and (max-width: 600px){
+    .container {
+        display: grid;
+        grid-template-columns: [c-logo-start c-start] 50vw [c-logo-end c-title-start] 50vw [c-title-end c-end];
+        grid-template-rows: [r-logo-start r-title-start] 20vh [r-logo-end r-title-end r-exp-description-start] 35vh [r-exp-description-end r-bullets-start] 35vh [r-bullets-end r-visit-start] 10vh [r-visit-end];
+        font-size: 1em;
+        color: rgb(2, 3, 35);
+    }
+    
+    .li {
+        font-size: 1em;
+        color: rgb(2, 3, 35);
+    } 
+    
+    #logo{
+        display: flex;
+        flex: 1;
+        grid-column: c-logo-start / c-logo-end;
+        grid-row: r-logo-start / r-logo-end;
+    }
+    
+    #skillsTitle{
+        font-size: 2em;
+    }
+    
+    #title{
+        grid-column: c-title-start / c-title-end;
+        grid-row: r-title-start / r-title-end;
+        
+        text-transform: uppercase;
+        
+        font-size: 2.5em;
+        font-family: 'Oswald', sans-serif;
+        color: white;
+        background-color: rgb(2, 3, 35);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #expDescription{
+        grid-column: c-start / c-end;
+        grid-row: r-exp-description-start / r-exp-description-end;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 15px;
+    }
+    
+    #fullDescription{
+        grid-column: c-start / c-end;
+        grid-row: r-exp-description-start / r-bullets-end;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    #expSkills{
+        grid-column: c-start / c-end;
+        grid-row: r-bullets-start / r-bullets-end;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .button{
+        background-color: white;
+        padding: 10px;
+        height: 20px;
+        color: rgb(2, 3, 35);
+        cursor: pointer;
+        border-radius: 20px;
+        font-weight: bold;
+        /* position: fixed; */
+        /* right: 0;  */
+        /* bottom: 15%; */
+    }
+    
+    #linkToCompany{
+        grid-column: c-start / c-end;
+        grid-row: r-visit-start / r-visit-end;
+    }
+}

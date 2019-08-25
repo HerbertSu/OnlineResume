@@ -37,6 +37,7 @@ import { SSL_OP_SINGLE_DH_USE } from 'constants';
  *    -Color Scheme possibilities: 
  *        -Turquoise, coral, ivory
  *        -#A299CA (lavendar), #7CCAAE (green), #ECEC84 (lemon)
+ *    -Make mobile compatible
  */
  
 let options = {

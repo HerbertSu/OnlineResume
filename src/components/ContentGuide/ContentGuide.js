@@ -9,7 +9,7 @@ export default class ContentGuide extends Component{
                     Content Guide
                 </div>
                 <div id="aboutMeSectionName" className="contentSectionNames">
-                    AboutMe
+                    About Me
                 </div>
                 <div id="expSectionName" className="contentSectionNames exp">
                     Job Experience
@@ -26,7 +26,7 @@ export default class ContentGuide extends Component{
                         <li>Infosys</li>
                         <li>ELFIN</li>
                         <li>BaPSF</li>
-                        <li>Camp Counselor</li>
+                        {/* <li>Camp Counselor</li> */}
                     </ul>
                 </div>
                 <div id="projectsSection" className="contentSection">
