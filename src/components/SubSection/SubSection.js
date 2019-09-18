@@ -3,6 +3,7 @@ import './styles.css';
 
 import Bullets from '../Bullets/Bullets';
 import Logo from '../Logo/Logo';
+import ContentCard from '../ContentCard/ContentCard';
 
 class SubSection extends Component{
     /**
@@ -23,10 +24,18 @@ class SubSection extends Component{
 
     render(){
         return(
-            <div style={{backgroundColor: this.props.backgroundColor}} className="container">
+            // <div style={{backgroundColor: this.props.backgroundColor}} className="container">
+            <div className="container">
+                <ContentCard boxshadow={this.props.backgroundColor} source={this.props.source}/>
+                <ContentCard skills={this.props.skills} />
+                <ContentCard slogan="Navigate Your Next"/>
+                <ContentCard companyBackground="Infosys is one of the world's largest IT consultancies."/>
+                <ContentCard quotes="I really learned a lot here!" />
+                <ContentCard impact="Infosys has over 100 clients and is a wellknown brand worldwide" />
                 <div id="title" style={{color:this.props.backgroundColor}}>
                     {this.props.title}
                 </div>
+                {/* 
                 <div id="leftFill"></div>
                 <div id="rightFill"></div>
                 <div id="bottomFill"></div>
@@ -44,7 +53,7 @@ class SubSection extends Component{
                     <div id="linkToCompany">
                         <div className="zoom">
                             <a className="button" onClick={()=>window.location = this.props.link}> Visit </a>
-                        </div>>
+                        </div>
                     </div>
                 :
                     <div></div>
@@ -59,9 +68,6 @@ class SubSection extends Component{
                     }
                 </div>
                 <div id="expSkills">
-                    {/* <text id="skillsTitle">
-                        Notable Skills
-                    </text> */}
                     <ul>
                         {this.props.skills.length != null ?
                             <Bullets bullets={this.bulletDescriptions(this.props.skills)}/>
@@ -70,7 +76,7 @@ class SubSection extends Component{
                         }
                         
                     </ul>
-                </div>
+                </div> */}
                 
             </div>
         )
