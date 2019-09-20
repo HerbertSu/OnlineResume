@@ -4,7 +4,7 @@
     grid-template-rows: [r-first-half-start r-name-start] 25vh [r-name-end r-email-start] 12.5vh [r-email-end r-cell-start] 12.5vh [r-cell-end r-first-half-end r-top-buffer-start] 5vh [r-top-buffer-end r-second-half-start] 40vh [r-second-half-end bottom-buffer-start] 5vh [bottom-buffer-end];
     position: relative;
     background-color: rgb(2, 3, 35);
-    background: linear-gradient(180deg, rgb(2, 3, 35) 50%, white 50%);
+    background: linear-gradient(180deg, rgb(2, 3, 35) 50%, #f1f1f1 50%);
 }
 
 #portrait{
@@ -86,7 +86,7 @@
         /* grid-template-rows: [r-name-start] 15vh [r-name-end r-email-start] 5vh [r-email-end r-cell-start] 5vh [r-cell-end r-photo-start] 25vh [r-photo-end r-about-me-start] 50vh [r-about-me-end]; */
         position: relative;
         background-color: rgb(2, 3, 35);
-        background: linear-gradient(180deg, rgb(2, 3, 35) 50%, white 50%);
+        background: linear-gradient(180deg, rgb(2, 3, 35) 50%, #f1f1f1 50%);
     }
     
     #portrait{

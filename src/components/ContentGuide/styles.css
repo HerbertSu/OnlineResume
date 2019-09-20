@@ -10,7 +10,7 @@ Color Schemes
     grid-template-rows: [r-title-start] 20vh [r-title-end r-section-names-start] 20vh [r-section-names-end r-section-start] 50vh [r-section-end r-bottom-buffer-start] 5vh [r-bottom-buffer-end];
     position: relative;
     background-color: rgb(2, 3, 35);
-    background: linear-gradient(180deg, rgb(2, 3, 35) 20%, white 0%);
+    background: linear-gradient(180deg, rgb(2, 3, 35) 20%, #f1f1f1 0%);
 }
 
 #contentGuideTitle{
@@ -119,7 +119,7 @@ ul{
         grid-template-rows: [r-header-start] 12.5vh [r-header-end r-about-me-start] 21.875vh [r-about-me-end r-job-exp-start] 21.875vh [r-job-exp-end r-projects-start] 21.875vh [r-projects-end r-volunteer-start] 21.875vh [r-volunteer-end];
         position: relative;
         background-color: rgb(2, 3, 35);
-        background: linear-gradient(180deg, rgb(2, 3, 35) 12.5%, white 0%);
+        background: linear-gradient(180deg, rgb(2, 3, 35) 12.5%, #f1f1f1 0%);
     }
     
     #contentGuideTitle{

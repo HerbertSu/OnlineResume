@@ -25,16 +25,23 @@ class SubSection extends Component{
     render(){
         return(
             // <div style={{backgroundColor: this.props.backgroundColor}} className="container">
-            <div className="container">
-                <ContentCard boxshadow={this.props.backgroundColor} source={this.props.source}/>
-                <ContentCard skills={this.props.skills} />
-                <ContentCard slogan="Navigate Your Next"/>
-                <ContentCard companyBackground="Infosys is one of the world's largest IT consultancies."/>
-                <ContentCard quotes="I really learned a lot here!" />
-                <ContentCard impact="Infosys has over 100 clients and is a wellknown brand worldwide" />
+            <div className="container-two-columns">
                 <div id="title" style={{color:this.props.backgroundColor}}>
                     {this.props.title}
                 </div>
+                <div id="columnOne">
+                    <ContentCard boxshadow={this.props.backgroundColor} source={this.props.source}/>
+                    <ContentCard impact="Infosys has over 100 clients" boxshadow={this.props.backgroundColor}/>
+                </div>
+                <div id="columnTwo">
+                    <ContentCard skills={this.props.skills} boxshadow={this.props.backgroundColor}/>
+                    <ContentCard slogan="Navigate Your Next" boxshadow={this.props.backgroundColor}/>
+                    <ContentCard companyBackground="Infosys is one of the world's largest IT consultancies." boxshadow={this.props.backgroundColor}/>
+                    <ContentCard quotes="I really learned a lot here!" boxshadow={this.props.backgroundColor}/>
+                </div>
+                
+                
+                
                 {/* 
                 <div id="leftFill"></div>
                 <div id="rightFill"></div>

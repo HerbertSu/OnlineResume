@@ -1,5 +1,23 @@
 #content-card-logo{
     border: solid;
-    width: 100px;
+    width: 30vw;
     height: auto;
+    background-color: #020323;
 }
+
+#content-card-container{
+    width: fit-content;
+    border: solid;
+    margin: 10px;
+    padding: 5px;
+}
+
+.left-column{
+    position: relative;
+    right: 0;
+};
+
+.right-column{
+    position: relative;
+    left: 0;
+}   

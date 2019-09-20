@@ -1,3 +1,41 @@
+.container-two-columns {
+    display: grid;
+    grid-template-rows: [r-title-start] 20vh [r-title-end r-top-pad-start] 5vh [r-top-pad-end r-logo-start r-content-start] 50vh [r-second-row-start] 20vh [r-second-row-end r-content-end r-bottom-pad-start] 5vh [r-bottom-pad-end];
+    grid-template-columns: [c-left-pad-start] 5vw [c-left-pad-end c-left-column-start] 40vw [c-left-column-end c-middle-column-start] 10vw [c-middle-column-end c-right-column-start] 40vw [c-right-column-end c-right-pad-start] 5vw [c-right-pad-end]; 
+}
+
+#title{
+    grid-column: c-left-pad-start / c-right-pad-end;
+    grid-row: r-title-start / r-title-end;
+    
+    text-transform: uppercase;
+    
+    font-size: 4em;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    background-color: rgb(2, 3, 35);
+}
+
+#columnOne{
+    grid-column: c-left-column-start / c-left-column-end;
+    grid-row: r-content-start / r-content-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#columnTwo{
+    grid-column: c-right-column-start / c-right-column-end;
+    grid-row: r-content-start / r-content-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+/* --------------------------^new stuff^---------------------------- */
+
 .container {
     display: grid;
     grid-template-columns: [left-pad-start] 5vw [left-pad-end logo-start] 32vw [logo-end pillar-start] 10vw [pillar-end bullets-start] 48vw [bullets-end right-pad-start] 5vw [right-pad-end];
@@ -41,7 +79,7 @@
 #skillsTitle{
     font-size: 2em;
 }
-
+/* 
 #title{
     grid-column-start: left-pad-start;
     grid-column-end: right-pad-end;
@@ -54,7 +92,7 @@
     font-family: 'Oswald', sans-serif;
     color: white;
     background-color: rgb(2, 3, 35);
-}
+} */
 
 #expDescription{
     grid-column: bullets-start / bullets-end;

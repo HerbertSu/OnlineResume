@@ -5,43 +5,41 @@ export default class ContentCard extends Component{
     render(){
         if(this.props.source != null){
             return(
-                <div id="content-card-container">
-                    {this.props.source ? 
-                        <img id="content-card-logo" style={{boxShadow:`10px 10px ${this.props.boxshadow} `}} src={this.props.source} /> 
-                    :
-                        this.props.skills
-                    }
-                </div>
+                <span style={{position: 'relative'}}>
+                    <img id="content-card-logo"  style={{boxShadow:`-10px 10px ${this.props.boxshadow} `}} src={this.props.source} /> 
+                    <br/>
+                </span>
             )
         }else if(this.props.skills != null){
             return(
-                <div id="content-card-container">
+                
+                <span id="content-card-container" className="right-column" style={{boxShadow:`10px 10px ${this.props.boxshadow} `}} >
                     {this.props.skills}
-                </div>
+                </span>
             )
         }else if(this.props.slogan != null){
             return(
-                <div>
+                <span id="content-card-container" className="right-column" style={{boxShadow:`10px 10px ${this.props.boxshadow} `}} >
                     {this.props.slogan}
-                </div>
+                </span>
             );
         }else if(this.props.quotes != null){
             return(
-                <div>
+                <span id="content-card-container" className="right-column" style={{boxShadow:`10px 10px ${this.props.boxshadow} `}} >
                     {this.props.quotes}
-                </div>
+                </span>
             );
         }else if(this.props.impact != null){
             return(
-                <div>
+                <span id="content-card-container" style={{boxShadow:`-10px 10px ${this.props.boxshadow} `}} >
                     {this.props.impact}
-                </div>
+                </span>
             );
         }else if(this.props.companyBackground != null){
             return(
-                <div>
+                <span id="content-card-container" style={{boxShadow:`10px 10px ${this.props.boxshadow} `}} >
                     {this.props.companyBackground}
-                </div>
+                </span>
             )
         }else{
             return(
