@@ -1,6 +1,6 @@
 .container-two-columns {
     display: grid;
-    grid-template-rows: [r-title-start] 20vh [r-title-end r-top-pad-start] 5vh [r-top-pad-end r-logo-start r-content-start] 50vh [r-second-row-start] 20vh [r-second-row-end r-content-end r-bottom-pad-start] 5vh [r-bottom-pad-end];
+    grid-template-rows: [r-title-start] 20vh [r-title-end r-top-pad-start] 5vh [r-top-pad-end r-logo-start r-content-start] 70vh [r-content-end r-bottom-pad-start] 5vh [r-bottom-pad-end];
     grid-template-columns: [c-left-pad-start] 5vw [c-left-pad-end c-left-column-start] 40vw [c-left-column-end c-middle-column-start] 10vw [c-middle-column-end c-right-column-start] 40vw [c-right-column-end c-right-pad-start] 5vw [c-right-pad-end]; 
 }
 
@@ -19,10 +19,21 @@
 #columnOne{
     grid-column: c-left-column-start / c-left-column-end;
     grid-row: r-content-start / r-content-end;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-end; */
+    display: grid;
+    grid-template-rows: [r-top-half-start] 60% [r-top-half-end r-bottom-half-start] 40% [r-bottom-half-end];
+}
+
+#col-one-first-half{
+    grid-row: r-top-half-start / r-top-half-end;
+}
+
+#col-one-second-half{
+    grid-row: r-bottom-half-start / r-bottom-half-end;
+    text-align: right;
 }
 
 #columnTwo{

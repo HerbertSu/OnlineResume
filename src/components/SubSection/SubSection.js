@@ -30,8 +30,12 @@ class SubSection extends Component{
                     {this.props.title}
                 </div>
                 <div id="columnOne">
-                    <ContentCard boxshadow={this.props.backgroundColor} source={this.props.source}/>
-                    <ContentCard impact="Infosys has over 100 clients" boxshadow={this.props.backgroundColor}/>
+                    <span id="col-one-first-half">
+                        <ContentCard boxshadow={this.props.backgroundColor} source={this.props.source}/>
+                    </span>
+                    <span id="col-one-second-half">
+                        <ContentCard impact="Infosys has over 100 clients" boxshadow={this.props.backgroundColor}/>
+                    </span>
                 </div>
                 <div id="columnTwo">
                     <ContentCard skills={this.props.skills} boxshadow={this.props.backgroundColor}/>

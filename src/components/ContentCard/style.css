@@ -1,13 +1,23 @@
 #content-card-logo{
-    border: solid;
+    /* border: solid; */
+    background-color: #020323;
+}
+
+.scale-by-height{
+    height: 40vh;
+    width: auto;
+}
+
+.scale-by-width{
     width: 30vw;
     height: auto;
-    background-color: #020323;
 }
 
 #content-card-container{
     width: fit-content;
-    border: solid;
+    /* border: solid; */
+    box-shadow: '10px 10px #020323';
+    background-color: white;
     margin: 10px;
     padding: 5px;
 }

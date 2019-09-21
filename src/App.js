@@ -47,10 +47,10 @@ let options = {
                           "experience/infosys", 
                           "experience/elfin", 
                           "experience/bapsf", 
-                          "experience/ec_community",
-                          "projects/poligo",
-                          "projects/meet_your_coworkers",
-                          "projects/herbert.su.io",
+                          // "experience/ec_community",
+                          "projects/poligo",                    
+                          "projects/meet_your_coworkers",                          
+                          "projects/herbertsu.github.io",  
                           "volunteer/bruin_partners",
                           "volunteer/interact",
                         ], // the anchors for each sections
@@ -68,6 +68,7 @@ let options = {
 const EXP_COLOR = "#40e0d0";
 const PRO_COLOR = "#f88379";
 const VOL_COLOR = "#ecdb84";
+const MAIN_COLOR = "#020323";
 
 class App extends Component {
 
