@@ -31,17 +31,24 @@ class SubSection extends Component{
                 </div>
                 <div id="columnOne">
                     <span id="col-one-first-half">
-                        <ContentCard boxshadow={this.props.backgroundColor} source={this.props.source}/>
+                        {/* <ContentCard boxshadow={this.props.backgroundColor} source={this.props.source}/> */}
+                        <div id="logo">
+                            { this.props.source != null ?
+                                <Logo source={this.props.source}/> 
+                            :
+                                this.props.title
+                            }
+                        </div>
                     </span>
                     <span id="col-one-second-half">
-                        <ContentCard impact="Infosys has over 100 clients" boxshadow={this.props.backgroundColor}/>
+                        <ContentCard content="Infosys has over 100 clients" column="left" boxshadow={this.props.backgroundColor}/>
                     </span>
                 </div>
                 <div id="columnTwo">
-                    <ContentCard skills={this.props.skills} boxshadow={this.props.backgroundColor}/>
-                    <ContentCard slogan="Navigate Your Next" boxshadow={this.props.backgroundColor}/>
-                    <ContentCard companyBackground="Infosys is one of the world's largest IT consultancies." boxshadow={this.props.backgroundColor}/>
-                    <ContentCard quotes="I really learned a lot here!" boxshadow={this.props.backgroundColor}/>
+                    <ContentCard content={this.props.skills} column="right" boxshadow={this.props.backgroundColor}/>
+                    <ContentCard content="Navigate Your Next" column="right" boxshadow={this.props.backgroundColor}/>
+                    <ContentCard content="Infosys is one of the world's largest IT consultancies." column="right" boxshadow={this.props.backgroundColor}/>
+                    <ContentCard content="I really learned a lot here!" column="right" boxshadow={this.props.backgroundColor}/>
                 </div>
                 
                 
