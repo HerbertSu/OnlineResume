@@ -7,6 +7,7 @@ import './App.css';
 import Landing from './components/Landing/Landing';
 import SubSection from './components/SubSection/SubSection';
 import ContentGuide from './components/ContentGuide/ContentGuide';
+import JobExperience from './components/JobExperience/JobExperience';
 
 import * as bp from './images/bruin_partners.png';
 import * as ec_rec from './images/ec_rec.png';
@@ -96,6 +97,9 @@ class App extends Component {
           </Section>
           <Section>
             <ContentGuide/>
+          </Section>
+          <Section>
+            <JobExperience />
           </Section>
           <Section>
             <SubSection title={'Infosys'} link={links.INFOSYS} skills={bios.INFOSYS_SKILLS} description={bios.INFOSYS_DESC} backgroundColor={EXP_COLOR} source={infosys}/>
