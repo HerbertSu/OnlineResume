@@ -2,9 +2,17 @@ import React, {Component} from 'react';
 import './style.css';
 
 import Logo from '../Logo/Logo';
-import * as elfin from '../../images/elfin.png';
-import * as infosys from '../../images/infosys.jpg';
+import JobExpDescription from '../JobExpDescription/JobExpDescription';
+
+// import * as elfin from '../../images/elfin.png';
+import * as elfin from '../../images/elfin2.png';
+// import * as infosys from '../../images/infosys.jpg';
+import * as infosys from '../../images/infosys2.png';
 import * as bapsf from '../../images/bapsf.jpg';
+import * as bapsf2 from '../../images/bapsf2.jpg';
+import * as bapsfLogo from '../../images/bapsf-logo.png';
+
+import * as bios from '../../bios';
 
 //Technical Experience?
 export default class JobExperience extends Component{
@@ -15,26 +23,29 @@ export default class JobExperience extends Component{
                     Job Experience
                 </div>
                 
-                <span id="exp-1-logo">
-                    <Logo source={infosys}/>
-                </span>
-                <div id="exp-1">
-                    
+
+                <div id="exp-1-logo" className="exp-logo">
+                    <img src={infosys} id="logo-cover"/>
+                    <span class="button-visit">hi</span>
                 </div>
 
-                <span id="exp-2-logo">
-                    <Logo source={bapsf}/>
+
+                <div id="exp-1">
+                    <JobExpDescription descriptors={bios.INFOSYS_CONTENT} />
+                </div>
+                <span id="exp-2-logo" className="exp-logo">
+                    <img src={bapsf2} id="logo-cover"/>
                 </span>
 
                 <div id="exp-2">
-                    
+                    <JobExpDescription descriptors={bios.BAPSF_CONTENT} />
                 </div>
 
-                <span id="exp-3-logo">
-                    <Logo source={elfin}/>
+                <span id="exp-3-logo" className="exp-logo">
+                    <img src={elfin} id="logo-cover"/>
                 </span>
                 <div id="exp-3">
-
+                    <JobExpDescription descriptors={bios.ELFIN_CONTENT}/>
                 </div>
             </div>
         );

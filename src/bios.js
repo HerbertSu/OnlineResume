@@ -105,3 +105,25 @@ Having already been a part of my school's Interact club as a member, I came on a
 export const INTERACT_SKILLS = [
 
 ];
+
+export const INFOSYS_CONTENT = [
+    "Oct 2017 - Present",
+    "Front-End Development: ReactJS, JavaScript, HTML5, CSS3",
+    "Back-End Development: PostgreSQL, NodeJS, ExpressJS, RESTful APIs",
+    "Programming: Python, SAP ABAP, Unix, Git",
+    // "Infosys is one of the worlds leading IT consultancies in the world. Listed as the third best regarded company among the world according to Forbes 2019."
+]
+
+export const BAPSF_CONTENT = [
+    "Jul 2016 - Sep 2017",
+    "Software: Computer-Assisted Design (CAD), Python",
+    "Physical Skills: Soldering, Machine Handling",
+    // "Serving as a Research Assistant, I worked under a Principal Scientist to computationally model a graphite heater. I also carried out real-world experiments to measure the electrical and thermal properties of the graphite used in the plasma's heating system."
+]
+
+export const ELFIN_CONTENT = [
+    "Jun 2015 - Sep 2017",
+    "Software: Python, MySQL, SQLAlchemy",
+    "Skills: Programming, Database Management & Creation, Physics",
+    // "As a programmer on the Mission Operations subsystem, my time on ELFIN was my first experienc being in a team environment. I was tasked deliverables, given responsibilities, tested my own code, coordinated with teammates, and participated in weekly meetings, all while juggling being a full-time student."
+]

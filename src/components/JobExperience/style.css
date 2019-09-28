@@ -1,3 +1,7 @@
+:root {
+    --main-color: #40e0d0;
+}
+
 #container-job-exp{
     display: grid;
     grid-template-columns: [c-first-pad-start] 5vw [c-first-pad-end c-left-third-start] 25vw [c-left-third-end c-second-pad-start] 7.5vw [c-second-pad-end c-middle-third-start] 25vw [c-middle-third-end c-third-pad-start] 7.5vw [c-third-pad-end c-right-third-start] 25vw [c-right-third-end c-fourth-pad-start] 5vw [c-fourth-pad-end]; 
@@ -13,8 +17,16 @@
     width: 100%;
     height: 100%;
     /* max-width: cover;
-    max-height: cover; */
+    max-height: cover;*/
 }
+
+#logo-cover{
+    object-fit: cover;
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+}
+
 
 #title-job-exp{
     grid-column: c-first-pad-start / c-fourth-pad-end;
@@ -35,6 +47,33 @@
     grid-row: r-logo-start / r-logo-end;
 }
 
+.exp-logo{
+    border: solid;
+    border-radius: 30px;
+    object-fit: cover;
+    border-color: var(--main-color);
+    background-color: white;
+    position: relative;
+}
+
+.exp-logo:hover{
+    cursor: pointer;
+    opacity: 85%;
+    background: rgba(255, 0, 0, 0.4);
+    z-index: -2;
+}
+
+.button-visit{
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 5px;
+    border-color: var(--main-color);
+    background-color: teal;
+    width: 5vw;
+    z-index: -1;
+}
+
 #exp-2{
     grid-column: c-middle-third-start / c-middle-third-end;
     grid-row: r-content-start / r-content-end;
@@ -43,6 +82,20 @@
 #exp-2-logo{
     grid-column: c-middle-third-start / c-middle-third-end;
     grid-row: r-logo-start / r-logo-end;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+#exp-2-logo #logo{
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.bapsf-front{
+    position: absolute;
+    top: 60px;
+    left: 80px;
 }
 
 #exp-3{
@@ -54,3 +107,4 @@
     grid-column: c-right-third-start / c-right-third-end;
     grid-row: r-logo-start / r-logo-end;
 }
+
