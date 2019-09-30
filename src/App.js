@@ -45,10 +45,7 @@ let options = {
   activeClass:          'active', // the class that is appended to the sections links
   anchors:              ["landing",
                           "contentGuide",
-                          "experience/infosys", 
-                          "experience/elfin", 
-                          "experience/bapsf", 
-                          "experience/ec_community",
+                          "job_experience",
                           "projects/poligo",
                           "projects/meet_your_coworkers",
                           "projects/herbert.su.io",
@@ -101,7 +98,7 @@ class App extends Component {
           <Section>
             <JobExperience />
           </Section>
-          <Section>
+          {/* <Section>
             <SubSection title={'Infosys'} link={links.INFOSYS} skills={bios.INFOSYS_SKILLS} description={bios.INFOSYS_DESC} backgroundColor={EXP_COLOR} source={infosys}/>
           </Section>
           <Section>
@@ -112,7 +109,7 @@ class App extends Component {
           </Section>
           <Section>
             <SubSection title={'El Cerrito Community Center'} link={links.EC_REC} skills={bios.EC_SKILLS} description={bios.EC_DESC} backgroundColor={EXP_COLOR} source={ec_rec}/>
-          </Section>
+          </Section> */}
           <Section>
             <SubSection title={'Poligo'} link={links.POLIGO} skills={bios.POLGIO_SKILLS} description={bios.POLIGO_DESC} backgroundColor={PRO_COLOR} source={poligo}/>
           </Section>

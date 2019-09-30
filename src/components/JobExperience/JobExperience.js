@@ -13,6 +13,7 @@ import * as bapsf2 from '../../images/bapsf2.jpg';
 import * as bapsfLogo from '../../images/bapsf-logo.png';
 
 import * as bios from '../../bios';
+import * as links from '../../links';
 
 //Technical Experience?
 export default class JobExperience extends Component{
@@ -24,26 +25,28 @@ export default class JobExperience extends Component{
                 </div>
                 
 
-                <div id="exp-1-logo" className="exp-logo">
+                <div id="exp-1-logo" className="exp-logo-container">
                     <img src={infosys} id="logo-cover"/>
-                    <span class="button-visit">hi</span>
+                    <div className="overlay"><a href={links.INFOSYS}>Visit</a></div>
                 </div>
-
-
                 <div id="exp-1">
                     <JobExpDescription descriptors={bios.INFOSYS_CONTENT} />
                 </div>
-                <span id="exp-2-logo" className="exp-logo">
-                    <img src={bapsf2} id="logo-cover"/>
-                </span>
 
+
+                <div id="exp-2-logo" className="exp-logo-container">
+                    <img src={bapsf2} id="logo-cover"/>
+                    <div className="overlay"><a href={links.BAPSF}>Visit</a></div>
+                </div>
                 <div id="exp-2">
                     <JobExpDescription descriptors={bios.BAPSF_CONTENT} />
                 </div>
 
-                <span id="exp-3-logo" className="exp-logo">
+
+                <div id="exp-3-logo" className="exp-logo-container">
                     <img src={elfin} id="logo-cover"/>
-                </span>
+                    <div className="overlay"><a href={links.ELFIN}>Visit</a></div>
+                </div>
                 <div id="exp-3">
                     <JobExpDescription descriptors={bios.ELFIN_CONTENT}/>
                 </div>

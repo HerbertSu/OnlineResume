@@ -8,25 +8,6 @@
     grid-template-rows: [r-title-start] 20vh [r-title-end r-top-pad-start] 4vh [r-top-pad-end r-logo-start] 30vh [r-logo-end r-content-buffer-start] 1vh [r-content-buffer-end r-content-start] 40vh [r-content-end r-bottom-pad-start] 5vh [r-bottom-pad-end]; 
 }
 
-#logo{
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center; 
-    object-fit: contain;
-    width: 100%;
-    height: 100%;
-    /* max-width: cover;
-    max-height: cover;*/
-}
-
-#logo-cover{
-    object-fit: cover;
-    border-radius: 30px;
-    width: 100%;
-    height: 100%;
-}
-
 
 #title-job-exp{
     grid-column: c-first-pad-start / c-fourth-pad-end;
@@ -47,33 +28,6 @@
     grid-row: r-logo-start / r-logo-end;
 }
 
-.exp-logo{
-    border: solid;
-    border-radius: 30px;
-    object-fit: cover;
-    border-color: var(--main-color);
-    background-color: white;
-    position: relative;
-}
-
-.exp-logo:hover{
-    cursor: pointer;
-    opacity: 85%;
-    background: rgba(255, 0, 0, 0.4);
-    z-index: -2;
-}
-
-.button-visit{
-    position: absolute;
-    left: 0;
-    top: 0;
-    border: 5px;
-    border-color: var(--main-color);
-    background-color: teal;
-    width: 5vw;
-    z-index: -1;
-}
-
 #exp-2{
     grid-column: c-middle-third-start / c-middle-third-end;
     grid-row: r-content-start / r-content-end;
@@ -82,20 +36,6 @@
 #exp-2-logo{
     grid-column: c-middle-third-start / c-middle-third-end;
     grid-row: r-logo-start / r-logo-end;
-    position: relative;
-    left: 0;
-    top: 0;
-}
-
-#exp-2-logo #logo{
-    object-fit: cover;
-    border-radius: 30px;
-}
-
-.bapsf-front{
-    position: absolute;
-    top: 60px;
-    left: 80px;
 }
 
 #exp-3{
@@ -108,3 +48,69 @@
     grid-row: r-logo-start / r-logo-end;
 }
 
+
+
+
+
+
+
+.exp-logo-container{
+    position: relative;
+    /* border: solid; */
+    box-shadow: 5px 10px;
+    border-radius: 30px;
+    border-color: var(--main-color);
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+#logo-cover{
+    object-fit: cover;
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.exp-logo-container:hover .overlay{
+    background: rgba(0, 0, 0, .3);
+}
+
+.overlay a{
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    color: white;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity .35s ease;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    text-decoration: none;
+}
+
+.overlay:hover a{
+    opacity: 1;
+}
