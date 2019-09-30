@@ -1,5 +1,6 @@
 :root {
     --main-color: #40e0d0;
+    --border-radius: 30px;
 }
 
 #container-job-exp{
@@ -20,7 +21,6 @@
 
 #exp-1{
     grid-column: c-left-third-start / c-left-third-end;
-    grid-row: r-content-start / r-content-end;
 }
 
 #exp-1-logo{
@@ -30,7 +30,6 @@
 
 #exp-2{
     grid-column: c-middle-third-start / c-middle-third-end;
-    grid-row: r-content-start / r-content-end;
 }
 
 #exp-2-logo{
@@ -40,7 +39,6 @@
 
 #exp-3{
     grid-column: c-right-third-start / c-right-third-end;
-    grid-row: r-content-start / r-content-end;
 }
 
 #exp-3-logo{
@@ -48,8 +46,12 @@
     grid-row: r-logo-start / r-logo-end;
 }
 
-
-
+.exp-content-container{
+    margin-top: 5px;
+    grid-row: r-content-start / r-bottom-pad-end;
+    background-color: var(--main-color);
+    border-radius: var(--border-radius);
+}
 
 
 
@@ -58,7 +60,7 @@
     position: relative;
     /* border: solid; */
     box-shadow: 5px 10px;
-    border-radius: 30px;
+    border-radius: var(--border-radius);
     border-color: var(--main-color);
     /* display: flex;
     justify-content: center;
@@ -67,7 +69,7 @@
 
 #logo-cover{
     object-fit: cover;
-    border-radius: 30px;
+    border-radius: var(--border-radius);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -85,7 +87,7 @@
     object-fit: cover;
     width: 100%;
     height: 100%;
-    border-radius: 30px;
+    border-radius: var(--border-radius);
     z-index: 1;
     display: flex;
     justify-content: center;

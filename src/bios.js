@@ -114,6 +114,20 @@ export const INFOSYS_CONTENT = [
     // "Infosys is one of the worlds leading IT consultancies in the world. Listed as the third best regarded company among the world according to Forbes 2019."
 ]
 
+export const INFOSYS_CONTENT_V2 = {
+    position : "Associate",
+    employmentDate : {
+        start : "Oct 2017",
+        end : null, //if null, then PRESENT
+    },
+    skills : {
+        frontEndDev : ["ReactJS", "JavaScript (ES6+)", "HTML5", "CSS3"],
+        backEndDev : ["PostgreSQL", "NodeJS", "ExpressJS", "RESTful APIs"],
+        programming : ["Python", "SAP ABAP", "Unix", "Git"]
+    },
+    summary : null,
+};
+
 export const BAPSF_CONTENT = [
     "Jul 2016 - Sep 2017",
     "Software: Computer-Assisted Design (CAD), Python",
@@ -121,9 +135,34 @@ export const BAPSF_CONTENT = [
     // "Serving as a Research Assistant, I worked under a Principal Scientist to computationally model a graphite heater. I also carried out real-world experiments to measure the electrical and thermal properties of the graphite used in the plasma's heating system."
 ]
 
+export const BAPSF_CONTENT_V2 = {
+    position : "Research Assistant",
+    employmentDate : {
+        start : "Jul 2016",
+        end : "Sep 2017",
+    },
+    skills : {
+        software : ["Python", "Computer-Assisted Design (CAD)", "ANSYS"],
+        physical : ["Soldering", "Machine Handling"]
+    },
+    summary : null,
+};
+
 export const ELFIN_CONTENT = [
     "Jun 2015 - Sep 2017",
     "Software: Python, MySQL, SQLAlchemy",
     "Skills: Programming, Database Management & Creation, Physics",
     // "As a programmer on the Mission Operations subsystem, my time on ELFIN was my first experienc being in a team environment. I was tasked deliverables, given responsibilities, tested my own code, coordinated with teammates, and participated in weekly meetings, all while juggling being a full-time student."
 ]
+
+export const ELFIN_CONTENT_V2 = {
+    position : "Programmer",
+    employmentDate : {
+        start : "Jun 2015",
+        end : "Sep 2017"
+    },
+    skills : {
+        software : ["Python", "MySQL" , "SQLAlchemy", "Systems ToolKit"],
+        skills : ["Programming", "Database Creation & Management", "Physics"],
+    },
+}
