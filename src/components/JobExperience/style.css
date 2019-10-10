@@ -53,9 +53,6 @@
     border-radius: var(--border-radius);
 }
 
-
-
-
 .exp-logo-container{
     position: relative;
     /* border: solid; */
@@ -66,6 +63,9 @@
     justify-content: center;
     align-items: center; */
 }
+
+
+
 
 #logo-cover{
     object-fit: cover;
@@ -115,4 +115,66 @@
 
 .overlay:hover a{
     opacity: 1;
+}
+
+
+@media screen and (max-width: 600px){
+    #container-job-exp{
+        display: grid;
+        grid-template-columns: [c-left-col-start] 40vw [c-left-col-end c-right-col-start] 60vw [c-right-col-end];
+        grid-template-rows: [r-title-start] 12.5vh [r-title-end r-first-exp-start] 28vh [r-first-exp-end r-second-exp-start] 28vh [r-second-exp-end r-third-exp-start] 28vh [r-third-exp-end r-bottom-pad] 3.5vh; 
+        font-size: 16px;
+    }
+
+    #title-job-exp{
+        grid-column: c-left-col-start / c-right-col-end;
+        grid-row: r-title-start / r-title-end;
+        background-color: rgb(2, 3, 35);
+        color: white;
+        font-size: 3em;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    #exp-1{
+        grid-row: r-first-exp-start / r-first-exp-end;
+        grid-column: c-right-col-start / c-right-col-end;
+    }
+    
+    #exp-1-logo{
+        grid-column: c-left-col-start / c-left-col-end;
+        grid-row: r-first-exp-start / r-first-exp-end;
+    }
+    
+    #exp-2{
+        grid-row: r-second-exp-start / r-second-exp-end;
+        grid-column: c-right-col-start / c-right-col-end;
+    }
+    
+    #exp-2-logo{
+        grid-column: c-left-col-start / c-left-col-end;
+        grid-row: r-second-exp-start / r-second-exp-end;
+    }
+    
+    #exp-3{
+        grid-row: r-third-exp-start / r-third-exp-end;
+        grid-column: c-right-col-start / c-right-col-end;
+    }
+    
+    #exp-3-logo{
+        grid-column: c-left-col-start / c-left-col-end;
+        grid-row: r-third-exp-start / r-third-exp-end;
+    }
+    
+    .exp-logo-container{
+        margin-left: 5px;
+        position: relative;
+        box-shadow: none;
+        border-radius: var(--border-radius);
+        border-color: var(--main-color);
+    }
+
+    .exp-content-container{
+        background-color: var(--main-color);
+        border-radius: var(--border-radius);
+    }
 }
