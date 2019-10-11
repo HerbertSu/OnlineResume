@@ -131,16 +131,9 @@
         flex: 1;
         grid-column: c-logo-start / c-logo-end;
         grid-row: r-logo-start / r-logo-end;
-    }
-
-    #logo-non-transparent{
-        display: flex;
-        flex: 1;
-        grid-column: c-logo-start / c-logo-end;
-        grid-row: r-logo-start / r-logo-end;
         background-color: var(--main-app-color);
     }
-    
+
     #skillsTitle{
         font-size: 2em;
     }
