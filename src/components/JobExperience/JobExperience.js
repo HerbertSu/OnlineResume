@@ -27,9 +27,9 @@ export default class JobExperience extends Component{
 
                 <div id="exp-1-logo" className="exp-logo-container">
                     <img src={infosys} id="logo-cover"/>
-                    <div className="overlay"><a href={links.INFOSYS}>Visit</a></div>
+                    <div className="overlay"><a id="white-img-background" href={links.INFOSYS}>Visit</a></div>
                 </div>
-                <div id="exp-1" className="exp-content-container">
+                <div id="exp-1" className=" exp-content-container">
                     <JobExpDescription descriptors={bios.INFOSYS_CONTENT} />
                 </div>
 
@@ -45,7 +45,7 @@ export default class JobExperience extends Component{
 
                 <div id="exp-3-logo" className="exp-logo-container">
                     <img src={elfin} id="logo-cover"/>
-                    <div className="overlay"><a href={links.ELFIN}>Visit</a></div>
+                    <div className="overlay"><a id="white-img-background" href={links.ELFIN}>Visit</a></div>
                 </div>
                 <div id="exp-3" className="exp-content-container">
                     <JobExpDescription descriptors={bios.ELFIN_CONTENT}/>

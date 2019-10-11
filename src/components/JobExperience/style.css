@@ -166,9 +166,10 @@
     }
     
     .exp-logo-container{
-        margin-left: 5px;
+        margin: 5px;
         position: relative;
         box-shadow: none;
+        border: solid;
         border-radius: var(--border-radius);
         border-color: var(--main-color);
     }
@@ -176,5 +177,24 @@
     .exp-content-container{
         background-color: var(--main-color);
         border-radius: var(--border-radius);
+    }
+
+    #white-img-background{
+        color: var(--main-color);
+    }
+
+    .overlay a{
+        width: 100%;
+        height: 100%;
+        flex: 1;
+        color: white;
+        z-index: 1;
+        opacity: 1;
+        transition: opacity .35s ease;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    
+        text-decoration: none;
     }
 }
