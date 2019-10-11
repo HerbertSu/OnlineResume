@@ -30,15 +30,22 @@ class SubSection extends Component{
                 <div id="leftFill"></div>
                 <div id="rightFill"></div>
                 <div id="bottomFill"></div>
-                <div id="logo">
+                { this.props.transparent ? 
+                    <div id="logo">
+                        { this.props.source != null ?
+                            <Logo source={this.props.source}/> 
+                        :
+                            this.props.title
+                        }
+                    </div> : 
+                    <div id="logo-non-transparent">
                     { this.props.source != null ?
                         <Logo source={this.props.source}/> 
                     :
                         this.props.title
                     }
-                    
                 </div>
-                
+                }
                 
                 {this.props.link != null ?
                     <div id="linkToCompany">

@@ -116,16 +116,16 @@ class App extends Component {
             <SubSection title={'Poligo'} link={links.POLIGO} skills={bios.POLGIO_SKILLS} description={bios.POLIGO_DESC} backgroundColor={PRO_COLOR} source={poligo}/>
           </Section>
           <Section>
-            <SubSection title={'Meet Your Coworkers'} skills={bios.COWORKERS_SKILLS} description={bios.COWORKERS_DESC} backgroundColor={PRO_COLOR} source={coworkers}/>
+            <SubSection title={'Meet Your Coworkers'} transparent={true} skills={bios.COWORKERS_SKILLS} description={bios.COWORKERS_DESC} backgroundColor={PRO_COLOR} source={coworkers}/>
           </Section>
           <Section>
             <SubSection title={'Online Resume'} skills={bios.WEBSITE_SKILLS} description={bios.WEBSITE_DESC} backgroundColor={PRO_COLOR} source={website}/>
           </Section>
           <Section>
-            <SubSection title={'Bruin Partners'} skills={bios.BRUIN_PARTNERS_SKILLS} description={bios.BRUIN_PARTNERS_DESC} link={links.BRUIN_P} backgroundColor={VOL_COLOR} source={bp}/>
+            <SubSection title={'Bruin Partners'} transparent={true} skills={bios.BRUIN_PARTNERS_SKILLS} description={bios.BRUIN_PARTNERS_DESC} link={links.BRUIN_P} backgroundColor={VOL_COLOR} source={bp}/>
           </Section>
           <Section>
-            <SubSection title={'Interact'} skills={bios.INTERACT_SKILLS} description={bios.INTERACT_DESC} backgroundColor={VOL_COLOR} source={interact}/>
+            <SubSection title={'Interact'} transparent={true} skills={bios.INTERACT_SKILLS} description={bios.INTERACT_DESC} backgroundColor={VOL_COLOR} source={interact}/>
           </Section>
         </SectionsContainer>
       </div>

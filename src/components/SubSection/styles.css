@@ -1,3 +1,8 @@
+:root {
+    --main-app-color: rgb(2, 3, 35);
+    --border-radius: 30px;
+}
+
 .container {
     display: grid;
     grid-template-columns: [left-pad-start] 5vw [left-pad-end logo-start] 32vw [logo-end pillar-start] 10vw [pillar-end bullets-start] 48vw [bullets-end right-pad-start] 5vw [right-pad-end];
@@ -126,6 +131,14 @@
         flex: 1;
         grid-column: c-logo-start / c-logo-end;
         grid-row: r-logo-start / r-logo-end;
+    }
+
+    #logo-non-transparent{
+        display: flex;
+        flex: 1;
+        grid-column: c-logo-start / c-logo-end;
+        grid-row: r-logo-start / r-logo-end;
+        background-color: var(--main-app-color);
     }
     
     #skillsTitle{
