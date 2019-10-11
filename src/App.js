@@ -7,6 +7,7 @@ import './App.css';
 import Landing from './components/Landing/Landing';
 import SubSection from './components/SubSection/SubSection';
 import ContentGuide from './components/ContentGuide/ContentGuide';
+import JobExperience from './components/JobExperience/JobExperience';
 
 import * as bp from './images/bruin_partners.png';
 import * as ec_rec from './images/ec_rec.png';
@@ -46,10 +47,7 @@ let options = {
   activeClass:          'active', // the class that is appended to the sections links
   anchors:              ["landing",
                           "contentGuide",
-                          "experience/infosys", 
-                          "experience/elfin", 
-                          "experience/bapsf", 
-                          // "experience/ec_community",
+                          "job_experience",
                           "projects/poligo",
                           "projects/meet_your_coworkers",
                           "projects/herbert.su.io",
@@ -100,6 +98,9 @@ class App extends Component {
             <ContentGuide/>
           </Section>
           <Section>
+            <JobExperience />
+          </Section>
+          {/* <Section>
             <SubSection title={'Infosys'} link={links.INFOSYS} skills={bios.INFOSYS_SKILLS} description={bios.INFOSYS_DESC} backgroundColor={EXP_COLOR} source={infosys}/>
           </Section>
           <Section>
@@ -118,7 +119,7 @@ class App extends Component {
             <SubSection title={'Meet Your Coworkers'} skills={bios.COWORKERS_SKILLS} description={bios.COWORKERS_DESC} backgroundColor={PRO_COLOR} source={coworkers}/>
           </Section>
           <Section>
-            <SubSection title={'Herbert.su.io'} skills={bios.WEBSITE_SKILLS} description={bios.WEBSITE_DESC} backgroundColor={PRO_COLOR} source={website}/>
+            <SubSection title={'Online Resume'} skills={bios.WEBSITE_SKILLS} description={bios.WEBSITE_DESC} backgroundColor={PRO_COLOR} source={website}/>
           </Section>
           <Section>
             <SubSection title={'Bruin Partners'} skills={bios.BRUIN_PARTNERS_SKILLS} description={bios.BRUIN_PARTNERS_DESC} link={links.BRUIN_P} backgroundColor={VOL_COLOR} source={bp}/>
