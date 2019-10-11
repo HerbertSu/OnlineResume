@@ -1,0 +1,206 @@
+:root {
+    --main-color: #40e0d0;
+    --border-radius: 30px;
+}
+
+#container-job-exp{
+    display: grid;
+    grid-template-columns: [c-first-pad-start] 5vw [c-first-pad-end c-left-third-start] 25vw [c-left-third-end c-second-pad-start] 7.5vw [c-second-pad-end c-middle-third-start] 25vw [c-middle-third-end c-third-pad-start] 7.5vw [c-third-pad-end c-right-third-start] 25vw [c-right-third-end c-fourth-pad-start] 5vw [c-fourth-pad-end]; 
+    grid-template-rows: [r-title-start] 20vh [r-title-end r-top-pad-start] 4vh [r-top-pad-end r-logo-start] 30vh [r-logo-end r-content-buffer-start] 1vh [r-content-buffer-end r-content-start] 40vh [r-content-end r-bottom-pad-start] 5vh [r-bottom-pad-end]; 
+}
+
+
+#title-job-exp{
+    grid-column: c-first-pad-start / c-fourth-pad-end;
+    grid-row: r-title-start / r-title-end;
+    background-color: rgb(2, 3, 35);
+    color: white;
+    font-size: 4em;
+    font-family: 'Oswald', sans-serif;
+}
+
+#exp-1{
+    grid-column: c-left-third-start / c-left-third-end;
+}
+
+#exp-1-logo{
+    grid-column: c-left-third-start / c-left-third-end;
+    grid-row: r-logo-start / r-logo-end;
+}
+
+#exp-2{
+    grid-column: c-middle-third-start / c-middle-third-end;
+}
+
+#exp-2-logo{
+    grid-column: c-middle-third-start / c-middle-third-end;
+    grid-row: r-logo-start / r-logo-end;
+}
+
+#exp-3{
+    grid-column: c-right-third-start / c-right-third-end;
+}
+
+#exp-3-logo{
+    grid-column: c-right-third-start / c-right-third-end;
+    grid-row: r-logo-start / r-logo-end;
+}
+
+.exp-content-container{
+    margin-top: 5px;
+    grid-row: r-content-start / r-bottom-pad-end;
+    background-color: var(--main-color);
+    border-radius: var(--border-radius);
+}
+
+.exp-logo-container{
+    position: relative;
+    /* border: solid; */
+    box-shadow: 5px 10px;
+    border-radius: var(--border-radius);
+    border-color: var(--main-color);
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+
+
+
+.logo-cover{
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.exp-logo-container:hover .overlay{
+    background: rgba(0, 0, 0, .3);
+}
+
+.overlay a{
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    color: white;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity .35s ease;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    text-decoration: none;
+}
+
+.overlay:hover a{
+    opacity: 1;
+}
+
+
+@media screen and (max-width: 600px){
+    #container-job-exp{
+        display: grid;
+        grid-template-columns: [c-left-col-start] 40vw [c-left-col-end c-right-col-start] 60vw [c-right-col-end];
+        grid-template-rows: [r-title-start] 12.5vh [r-title-end r-first-exp-start] 28vh [r-first-exp-end r-second-exp-start] 28vh [r-second-exp-end r-third-exp-start] 28vh [r-third-exp-end r-bottom-pad] 3.5vh; 
+        font-size: 16px;
+    }
+
+    #title-job-exp{
+        grid-column: c-left-col-start / c-right-col-end;
+        grid-row: r-title-start / r-title-end;
+        background-color: rgb(2, 3, 35);
+        color: white;
+        font-size: 3em;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    #exp-1{
+        grid-row: r-first-exp-start / r-first-exp-end;
+        grid-column: c-right-col-start / c-right-col-end;
+    }
+    
+    #exp-1-logo{
+        grid-column: c-left-col-start / c-left-col-end;
+        grid-row: r-first-exp-start / r-first-exp-end;
+    }
+    
+    #exp-2{
+        grid-row: r-second-exp-start / r-second-exp-end;
+        grid-column: c-right-col-start / c-right-col-end;
+    }
+    
+    #exp-2-logo{
+        grid-column: c-left-col-start / c-left-col-end;
+        grid-row: r-second-exp-start / r-second-exp-end;
+    }
+    
+    #exp-3{
+        grid-row: r-third-exp-start / r-third-exp-end;
+        grid-column: c-right-col-start / c-right-col-end;
+    }
+    
+    #exp-3-logo{
+        grid-column: c-left-col-start / c-left-col-end;
+        grid-row: r-third-exp-start / r-third-exp-end;
+    }
+    
+    .exp-logo-container{
+        margin: 5px;
+        position: relative;
+        box-shadow: none;
+        border: solid;
+        border-radius: var(--border-radius);
+        border-color: var(--main-color);
+    }
+
+    .exp-content-container{
+        background-color: var(--main-color);
+        border-radius: var(--border-radius);
+    }
+
+    #white-img-background{
+        color: var(--main-color);
+    }
+
+    .overlay a{
+        width: 100%;
+        height: 100%;
+        flex: 1;
+        color: white;
+        z-index: 1;
+        opacity: 1;
+        transition: opacity .35s ease;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    #logo-small-width-fit{
+        object-fit: contain;
+    }
+
+}

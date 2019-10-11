@@ -114,7 +114,7 @@ ul{
     #contentGuideContainer{
         display: grid;
         /* grid-template-columns: [c-left-buffer-start] 5vw [c-left-buffer-end c-first-divider-start] 0.5vw [c-first-divider-end c-first-quart-start] 1fr [c-first-quart-end c-second-divider-start] 0.5vw [c-second-divider-end c-second-quart-start] 1fr [c-second-quart-end c-third-divider-start] 0.5vw [c-third-divider-end c-third-quart-start] 1fr [c-third-quart-end c-fourth-divider-start] 0.5vw [c-fourth-divider-end c-fourth-quart-start] 1fr [c-fourth-quart-end c-fifth-divider-start] 0.5vw [c-fifth-divider-end c-right-buffer-start] 5vw [c-right-buffer-end]; */
-        grid-template-columns: [c-title-start] 35vw [c-title-end c-bullets-start] 65vw [c-bullets-end];
+        grid-template-columns: [c-title-start] 40vw [c-title-end c-bullets-start] 60vw [c-bullets-end];
         /* grid-template-rows: [r-title-start] 20vh [r-title-end r-section-names-start] 20vh [r-section-names-end r-section-start] 50vh [r-section-end r-bottom-buffer-start] 5vh [r-bottom-buffer-end]; */
         grid-template-rows: [r-header-start] 12.5vh [r-header-end r-about-me-start] 21.875vh [r-about-me-end r-job-exp-start] 21.875vh [r-job-exp-end r-projects-start] 21.875vh [r-projects-end r-volunteer-start] 21.875vh [r-volunteer-end];
         position: relative;
@@ -149,7 +149,7 @@ ul{
     }
     
     .contentSection ul li{
-        padding:5px;
+        padding:3px;
     }
     
     .exp{
