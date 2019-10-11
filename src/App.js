@@ -117,7 +117,7 @@ class App extends Component {
             <SubSection title={'Meet Your Coworkers'} skills={bios.COWORKERS_SKILLS} description={bios.COWORKERS_DESC} backgroundColor={PRO_COLOR} source={coworkers}/>
           </Section>
           <Section>
-            <SubSection title={'Herbert.su.io'} skills={bios.WEBSITE_SKILLS} description={bios.WEBSITE_DESC} backgroundColor={PRO_COLOR} source={website}/>
+            <SubSection title={'Online Resume'} skills={bios.WEBSITE_SKILLS} description={bios.WEBSITE_DESC} backgroundColor={PRO_COLOR} source={website}/>
           </Section>
           <Section>
             <SubSection title={'Bruin Partners'} skills={bios.BRUIN_PARTNERS_SKILLS} description={bios.BRUIN_PARTNERS_DESC} link={links.BRUIN_P} backgroundColor={VOL_COLOR} source={bp}/>
