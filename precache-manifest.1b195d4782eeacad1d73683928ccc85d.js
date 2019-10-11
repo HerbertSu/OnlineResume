@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cbecc2433f163a985af864b8f3a72efb",
+    "revision": "4ff01a1bfca8c5be8a28f48bc0959526",
     "url": "/OnlineResume/index.html"
   },
   {
-    "revision": "071fb8ba3a3085ee09b5",
-    "url": "/OnlineResume/static/css/main.a6ca79f7.chunk.css"
+    "revision": "3d01a242bd082e375bfb",
+    "url": "/OnlineResume/static/css/main.c92630e7.chunk.css"
   },
   {
-    "revision": "3a24f3b42b2491f09cf6",
-    "url": "/OnlineResume/static/js/2.92a071b5.chunk.js"
+    "revision": "520bddbba8b1028bb235",
+    "url": "/OnlineResume/static/js/2.992f2952.chunk.js"
   },
   {
-    "revision": "071fb8ba3a3085ee09b5",
-    "url": "/OnlineResume/static/js/main.8ac3f8b2.chunk.js"
+    "revision": "3d01a242bd082e375bfb",
+    "url": "/OnlineResume/static/js/main.46f9237b.chunk.js"
   },
   {
     "revision": "6ec3d206f57ca5c51a5f",
@@ -28,6 +28,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/OnlineResume/static/media/bapsf.ddd5d557.jpg"
   },
   {
+    "revision": "c011ff41d9309ae6ba94c7141f9ca3ae",
+    "url": "/OnlineResume/static/media/bapsf2.c011ff41.jpg"
+  },
+  {
     "revision": "b7aa1ca5962520ca26591e50aacb56e9",
     "url": "/OnlineResume/static/media/coworkers.b7aa1ca5.png"
   },
@@ -36,8 +40,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/OnlineResume/static/media/elfin.97d0e95c.png"
   },
   {
+    "revision": "b02ee79adb3f8c63f58a4bb4a01bfd3d",
+    "url": "/OnlineResume/static/media/elfin2.b02ee79a.png"
+  },
+  {
     "revision": "4f44133159b0d608c3cf353993bcafc7",
     "url": "/OnlineResume/static/media/infosys.4f441331.jpg"
+  },
+  {
+    "revision": "ba14df0c503a2c6c9b5df88cab64f0f3",
+    "url": "/OnlineResume/static/media/infosys2.ba14df0c.png"
   },
   {
     "revision": "c79fd870f0569007be790d239d55612d",
