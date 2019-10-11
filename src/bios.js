@@ -108,8 +108,7 @@ export const INTERACT_SKILLS = [
 
 export const INFOSYS_CONTENT = [
     "Oct 2017 - Present",
-    "Front-End Development: ReactJS, JavaScript, HTML5, CSS3",
-    "Back-End Development: PostgreSQL, NodeJS, ExpressJS, RESTful APIs",
+    "Full Stack Development: ReactJS, JavaScript, HTML5, CSS3, PostgreSQL, NodeJS, ExpressJS, RESTful APIs",
     "Programming: Python, SAP ABAP, Unix, Git",
     // "Infosys is one of the worlds leading IT consultancies in the world. Listed as the third best regarded company among the world according to Forbes 2019."
 ]

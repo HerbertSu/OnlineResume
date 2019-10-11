@@ -19,3 +19,25 @@
     font-size: 1rem;
 }
 
+
+@media screen and (max-width: 600px){
+    .job-content{
+        padding: 2px;
+    }
+    
+    .divider{
+        border-bottom: 1px solid #40e0d0;
+        border-width: 2.5px;
+        border-color: white;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    
+    #container-descriptors{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        font-size: 14px;
+    }
+}
